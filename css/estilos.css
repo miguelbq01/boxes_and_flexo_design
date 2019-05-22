@@ -14,7 +14,7 @@
     color: white;
     font-family: Lato;
     font-weight: bold;
-    font-size: 25px
+    font-size: 50px
 }
 
 #section_login_completo div h3 {
@@ -32,20 +32,79 @@
 .login_input_container {
     white-space: nowrap;
     background-color: white;
-    border-radius: 35px;
-    margin: 30px;
-    padding: 10px 0;
+    border-radius: 10px;
+    margin: 30px 50px;
+    padding: 10px 15px;
 }
 
 .login_input_container i {
     display: inline-block;
+    opacity: .5;
+    padding-right: 5px;
+}
+
+.center_column {
+    margin-top: 100px;
+    transition: all .5s;
 }
 
 .login_input_container input {
     display: inline-block;
     height: 35px;
     margin: 0;
+    font-family: Lato;
+    width: 100%;
+    outline-width: 0px;
+    color: #333333;
+    font-size: 16px;
     background-color: transparent;
     border: none;
     padding: 0 5px;
+}
+
+div .column img {
+    width: 10vw;
+    transition: all .5s;
+}
+
+.btn_iniciar_sesion {
+    border-radius: 100px;
+    padding: 25px 40px;
+}
+
+.footer {
+    padding: 0rem 0.5rem 3rem;
+    background-color: #2e2e2e;
+}
+
+.footer div p {
+    color: white;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    div .column img {
+        width: 45vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    div .column img {
+        width: 15vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 100px) and (min-width: 299px) {
+    div .column img {
+        width: 50vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
 }

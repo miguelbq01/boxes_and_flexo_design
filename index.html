@@ -11,43 +11,49 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
 </head>
 
 <body>
 
     <div class="container-fluid is-fullwidth">
         <section id="section_login_completo" class="hero is-fullheight">
-
-
-
             <div class="columns">
                 <div class="column"> </div>
-                <div class="column">
-                    <img src="" alt="logotipo_boxes">
+                <div class="center_column column">
+                    <img src="img/boxes_logotipo_outline_blanco-01.png" alt="logotipo_boxes">
 
                     <h1>Boxes & Flexo</h1>
-                    <h5>Completo</h5>
+                    <h5>Sistema de Envío de correos</h5>
                     <h3>Inicio Sesión</h3>
 
                     <div class="login_input_container">
-                        <i class="fas fa-key"></i>
-                        <input type="password" placeholder="Ingrese Usuario">
+                        <i class="fas fa-envelope"></i>
+                        <input id="login_input_usuario" type="email" placeholder="Ingrese Usuario">
                     </div>
 
                     <div class="login_input_container">
                         <i class="fas fa-key"></i>
-                        <input type="password" placeholder="Ingrese Contraseña">
+                        <input id="login_input_password" type="password" placeholder="Ingrese Contraseña">
                     </div>
-                    <a class="button is-outlined">Outlined</a>
+                    <a class="btn_iniciar_sesion button is-info is-inverted is-outlined">Iniciar Sesión</a>
                 </div>
 
                 <div class="column"> </div>
 
             </div>
-
-
-
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        Sistema de envio de correos electronicos <b>Boxes & Flexo</b>
+                    </p>
+                </div>
+            </footer>
         </section>
+
+
+
 
     </div>
 
