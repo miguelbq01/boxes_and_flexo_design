@@ -1,4 +1,4 @@
-/* clases & ids de Login de Sistema de Correos */
+/* login styles ------------------------------------------------------------------------------ */
 
 #section_login_completo {
     width: 100%;
@@ -132,4 +132,30 @@ div .column img {
     .center_column {
         margin-top: 50px;
     }
+}
+
+
+/* end login styles  ------------------------------------------------------------------------------------ */
+
+
+/* Nav bar Style --------------  */
+
+.navbar {
+    background-color: #333333;
+}
+
+#p_usuario {
+    color: white;
+    font-family: lato;
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+.navbar-item {
+    color: white;
+    font-family: lato;
+}
+
+.navbar-item:hover {
+    font-weight: bold;
 }
