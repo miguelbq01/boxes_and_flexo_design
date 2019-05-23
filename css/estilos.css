@@ -5,9 +5,19 @@
     background-color: #323232;
 }
 
+.columns {
+    transition: all;
+}
+
+#login_form {
+    display: none;
+    transition: all;
+}
+
 #section_login_completo div {
     width: auto;
     text-align: center;
+    transition: all;
 }
 
 #section_login_completo div h1 {
@@ -60,6 +70,21 @@
     background-color: transparent;
     border: none;
     padding: 0 5px;
+}
+
+#login_error_alert {
+    display: none;
+}
+
+#login_error_alert p {
+    font-size: 25px;
+    font-family: lato;
+}
+
+.input_error_validation {
+    transition: all 1s;
+    border: 3px solid red;
+    background-color: rgb(255, 220, 220);
 }
 
 div .column img {

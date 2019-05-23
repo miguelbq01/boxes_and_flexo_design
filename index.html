@@ -19,9 +19,13 @@
 
     <div class="container-fluid is-fullwidth">
         <section id="section_login_completo" class="hero is-fullheight">
+            <div id="login_error_alert" class="notification is-info">
+                <button class="delete"></button>
+                <p>Su contraseña o Usuario esta vacío o no es válido</p>
+            </div>
             <div class="columns">
                 <div class="column"> </div>
-                <div class="center_column column">
+                <div id="login_form" class="center_column column">
                     <img src="img/boxes_logotipo_outline_blanco-01.png" alt="logotipo_boxes">
 
                     <h1>Boxes & Flexo</h1>
@@ -46,7 +50,7 @@
             <footer class="footer">
                 <div class="content has-text-centered">
                     <p>
-                        Sistema de envio de correos electronicos <b>Boxes & Flexo</b>
+                        Sistema de envío de correos electronicos <b>Boxes & Flexo</b>
                     </p>
                 </div>
             </footer>
