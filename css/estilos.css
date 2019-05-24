@@ -317,3 +317,165 @@ input::placeholder{
 #buscar_submit:hover{
     background-color: #4782aa;
 }
+
+/* login styles ------------------------------------------------------------------------------ */
+
+#section_login_completo {
+    width: 100%;
+    background-color: #323232;
+}
+
+.columns {
+    transition: all;
+}
+
+#login_form {
+    display: none;
+    transition: all;
+}
+
+#section_login_completo div {
+    width: auto;
+    text-align: center;
+    transition: all;
+}
+
+#section_login_completo div h1 {
+    color: white;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 50px
+}
+
+#section_login_completo div h3 {
+    color: white;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 45px 0 0 0;
+}
+
+#section_login_completo h5 {
+    color: white;
+}
+
+.login_input_container {
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 50px;
+    padding: 10px 15px;
+}
+
+.login_input_container i {
+    display: inline-block;
+    opacity: .5;
+    padding-right: 5px;
+}
+
+.center_column {
+    margin-top: 100px;
+    transition: all .5s;
+}
+
+.login_input_container input {
+    display: inline-block;
+    height: 35px;
+    margin: 0;
+    font-family: Lato;
+    width: 100%;
+    outline-width: 0px;
+    color: #333333;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding: 0 5px;
+}
+
+#login_error_alert {
+    display: none;
+}
+
+#login_error_alert p {
+    font-size: 25px;
+    font-family: lato;
+}
+
+.input_error_validation {
+    transition: all 1s;
+    border: 3px solid red;
+    background-color: rgb(255, 220, 220);
+}
+
+div .column img {
+    width: 10vw;
+    transition: all .5s;
+}
+
+.btn_iniciar_sesion {
+    border-radius: 100px;
+    padding: 25px 40px;
+}
+
+.footer {
+    padding: 0rem 0.5rem 3rem;
+    background-color: #2e2e2e;
+}
+
+.footer div p {
+    color: white;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    div .column img {
+        width: 45vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    div .column img {
+        width: 15vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 100px) and (min-width: 299px) {
+    div .column img {
+        width: 50vw;
+    }
+    .center_column {
+        margin-top: 50px;
+    }
+}
+
+
+/* end login styles  ------------------------------------------------------------------------------------ */
+
+
+/* Nav bar Style --------------  */
+
+.navbar {
+    background-color: #333333;
+}
+
+#p_usuario {
+    color: white;
+    font-family: lato;
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+.navbar-item {
+    color: white;
+    font-family: lato;
+}
+
+.navbar-item:hover {
+    font-weight: bold;
+}

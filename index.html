@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bulma.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <title>Boxes & Flexo</title>
-    </head>
-</html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bulma.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Boxes & Flexo - Login</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+</head>
+
 <body>
-    
+
+    <div class="container-fluid is-fullwidth">
+        <section id="section_login_completo" class="hero is-fullheight">
+            <div id="login_error_alert" class="notification is-info">
+                <button class="delete"></button>
+                <p>Su contraseña o Usuario esta vacío o no es válido</p>
+            </div>
+            <div class="columns">
+                <div class="column"> </div>
+                <div id="login_form" class="center_column column">
+                    <img src="img/boxes_logotipo_outline_blanco-01.png" alt="logotipo_boxes">
+
+                    <h1>Boxes & Flexo</h1>
+                    <h5>Sistema de Envío de correos</h5>
+                    <h3>Inicio Sesión</h3>
+
+                    <div class="login_input_container">
+                        <i class="fas fa-envelope"></i>
+                        <input id="login_input_usuario" type="email" placeholder="Ingrese Usuario">
+                    </div>
+
+                    <div class="login_input_container">
+                        <i class="fas fa-key"></i>
+                        <input id="login_input_password" type="password" placeholder="Ingrese Contraseña">
+                    </div>
+                    <a class="btn_iniciar_sesion button is-info is-inverted is-outlined">Iniciar Sesión</a>
+                </div>
+
+                <div class="column"> </div>
+
+            </div>
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        Sistema de envío de correos electronicos <b>Boxes & Flexo</b>
+                    </p>
+                </div>
+            </footer>
+        </section>
+
+
+
+
+    </div>
+
 </body>
+
+
+</html>
