@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="js/funciones.js"></script>
+        <title>Boxes & Flexo</title>
+    </head>
+<body>
+    <!-- HEADER NAVBAR -->
+    <nav id="header_contenedor" role="navigation" aria-label="main navigation">
+        <div id="header_contenedor_iz">
+            <img src="img/logoblanco.png">
+            <!-- LINK PARA CAMBIAR A CORREOS -->
+            <div class="header_contenedor_link">
+                <a class="header_link active">CORREOS</a>
+                <span class="subrayado_link"></span>
+            </div>
+            <!-- LINK PARA CAMBIAR A CLIENTES -->
+            <div class="header_contenedor_link">
+                <a class="header_link">CLIENTES</a>
+                <span class="subrayado_link hidden"></span>
+            </div>
+        </div>
+        <div id="header_contenedor_der" class="navbar-end">
+            <div class="header_contenedor_link">
+                <div >Joaquín Fenix</div>
+            </div>
+            <!-- LINK PARA CERRAR SESION -->
+            <div class="header_contenedor_link">
+                <a>Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+    <div id="contenedor_contenido">
+         <div id="contenedor_lista_correos">
+            <div class="columns">
+                <h1 class="column is-12">CORREOS</h1>
+            </div>
+            <div class="columns">
+                <!-- PAGINADOR -->
+                <div class="column is-7 is-offset-5 contenedor_paginador">
+                    <span>PÁGINA <b>[num]</b> de [numtotal]</span>
+                    <div class="paginador_flecha" id="regresar_pag"></div>
+                    <div class="paginador_flecha" id="siguiente_pag"></div>
+                    <div class="contenedor_busqueda">
+                        <input type="text" placeholder="Buscar...">
+                        <span class="buscar_icono"></span>
+                    </div>
+                    <button id="buscar_submit">Buscar</button>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-3 correo">
+                    <form id="agregar_correo" class="contenedor_correo">
+                        <div class="input_file">
+                            <input type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple>
+                        </div>
+                    </form>
+                </div>
+                <div class="column is-3 correo">
+                    <div class="contenedor_correo correo">
+                        <div class="correo_vis">
+                            <div class="correo_vis_overlay">
+                                <div class="contenedor_icono">
+                                    <div class="reemplazar_icono"></div>
+                                    <div>REEMPLAZAR</div>
+                                </div>
+                                <div class="contenedor_icono">
+                                    <div class="view_icono"></div>
+                                    <div>VISUALIZAR</div>
+                                </div>
+                                <div class="contenedor_icono">
+                                    <div class="eliminar_icono"></div>
+                                    <div>ELIMINAR</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="correo_info">
+                            <span class="titulo_correo">[TITULO DE CORREO]</span>
+                            <span class="descr_correo">[DESCRIPCION DE CORREO]</span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+         </div>
+    </div>
+</body>
+</html>

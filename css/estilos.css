@@ -1,0 +1,319 @@
+@font-face{
+    font-family: "Gotham";
+    src: url("../css/GOTHAM-MEDIUM.OTF") format('opentype');
+}
+
+@font-face{
+    font-family: "Gotham Light";
+    src: url("../css/GOTHAM-BOOK.OTF") format('opentype');
+}
+
+
+*{
+    font-family: "Gotham Light";
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL */
+html{
+    overflow: auto;
+}
+
+body{
+    min-height: 100vh;
+    overflow: auto;
+}
+.hidden{
+    display: none !important;
+}
+
+h1{
+    font-size: 42px;
+    font-family: 'Gotham';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+b{
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+
+input::placeholder{
+    color: #a4a3a5;
+}
+
+/* HEADER */
+#header_contenedor{
+    background-color: #444247;
+    color: white;
+    width: 100%;
+    height: 8vh;
+    padding: 0 5%;
+    display: flex;
+}
+
+.navbar_seccion{
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    vertical-align: middle;
+    align-self: center;
+    margin-right: 15px;
+}
+
+.navbar_seccion:hover{
+     background-color: transparent;
+}
+
+.navbar-start{
+    margin-left: 20px;
+}
+
+#header_contenedor_iz{
+    display: flex;
+    align-content: center;
+    height: 100%;
+}
+
+#header_contenedor_der{
+    justify-self: flex-end;
+}
+
+#header_contenedor_iz img{
+    width: 10.2vw;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.header_contenedor_link{
+    color: #fff;
+    font-size: 16px;
+    align-self: center;
+    margin-left: 40px;
+}
+
+.header_contenedor_link .active{
+    font-weight: bold;
+    font-family: "Gotham";
+}
+
+.header_contenedor_link:hover{
+    color: #fff;
+}
+
+.subrayado_link{
+    width: 80%;
+    margin: 0 10%;
+    height: 2px;
+    background-color: white;
+    display: block;
+}
+
+.header_contenedor_link a{
+    color: #fff;
+    opacity: 1;
+}
+
+.header_contenedor_link a:hover{
+    opacity: .5;
+    transition: .5s;
+}
+
+/* LISTA DE CORREOS */
+#contenedor_lista_correos{
+    width: 100%;
+    height:100%;
+    padding: 0 5vw;
+}
+
+#contenedor_contenido{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_correo{
+    border-radius: 5px;
+}
+
+#agregar_correo{
+    border: dashed 3px rgba(89,165,216,.5);
+    padding: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input_file{
+    background-color: rgba(89,165,216,.25);
+    height: 100%;
+    border-radius: 5px;
+    background-image: url('../img/subir.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.input_file:hover{
+    opacity: .6;
+    background-size: 55%;
+    transition: .5s;
+}
+
+#file{
+    opacity:0;
+    height: 100%;
+    width:100%;
+    cursor: pointer;
+}
+
+.column.correo{
+    height: 300px;
+}
+
+.contenedor_correo.correo{
+    border: solid 3px #444247;
+    height: 100%;
+}
+
+.correo_vis{
+    height: 70%;
+    width: 100%;
+    background-image: url('../img/mailexample.jpg');
+    background-size: cover;
+    background-position: top;
+    opacity: .8;
+}
+
+.correo_vis_overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 2.5vw;
+}
+
+.correo_info{
+    height: 30%;
+    width: 100%;
+    background-color: #444247;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.titulo_correo{
+    font-family: "Gotham";
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.descr_correo{
+    color: #fff;
+    display: block;
+}
+
+.eliminar_icono, .view_icono, .reemplazar_icono{
+    width: 100%;
+    height: 50%;
+    transition: .5s;
+}
+
+.reemplazar_icono{
+    background: url('../img/reemplazar.png') no-repeat center;
+}
+
+.view_icono{
+    background: url('../img/ver.png') no-repeat center;
+}
+
+.eliminar_icono{
+    background: url('../img/borrar.png') no-repeat center;
+}
+
+.eliminar_icono:hover, .view_icono:hover, .reemplazar_icono:hover{
+    opacity: .6;
+}
+
+.buscar_icono{
+    background-image: url('../img/buscar.png');
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenedor_icono{
+    width:  auto;
+    height: auto;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Gotham';
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginador_flecha{
+    width: 35px;
+    height: 35px;
+    background-color: #59a5d8;
+    background-image: url('../img/flecha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#siguiente_pag{
+    transform: rotate(180deg);
+}
+
+.contenedor_paginador{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contenedor_busqueda{
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid 2px #444247;
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.contenedor_busqueda input{
+    border:none;
+    background: none;
+    width: 100%;
+}
+
+#buscar_submit{
+    height: 35px;
+    min-width: 75px;
+    border: none;
+    background-color: #59a5d8;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#buscar_submit:hover{
+    background-color: #4782aa;
+}
