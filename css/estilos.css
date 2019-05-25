@@ -1,34 +1,36 @@
-@font-face{
+@font-face {
     font-family: "Gotham";
     src: url("../css/GOTHAM-MEDIUM.OTF") format('opentype');
 }
 
-@font-face{
+@font-face {
     font-family: "Gotham Light";
     src: url("../css/GOTHAM-BOOK.OTF") format('opentype');
 }
 
-
-*{
+* {
     font-family: "Gotham Light";
     font-weight: normal;
     font-style: normal;
 }
 
+
 /* GENERAL */
-html{
+
+html {
     overflow: auto;
 }
 
-body{
+body {
     min-height: 100vh;
     overflow: auto;
 }
-.hidden{
+
+.hidden {
     display: none !important;
 }
 
-h1{
+h1 {
     font-size: 42px;
     font-family: 'Gotham';
     font-weight: bold;
@@ -36,17 +38,19 @@ h1{
     margin-top: 30px;
 }
 
-b{
+b {
     font-family: 'Gotham';
     font-weight: bold;
 }
 
-input::placeholder{
+input::placeholder {
     color: #a4a3a5;
 }
 
+
 /* HEADER */
-#header_contenedor{
+
+#header_contenedor {
     background-color: #444247;
     color: white;
     width: 100%;
@@ -55,7 +59,7 @@ input::placeholder{
     display: flex;
 }
 
-.navbar_seccion{
+.navbar_seccion {
     color: #fff;
     font-weight: bold;
     background-color: transparent;
@@ -64,47 +68,47 @@ input::placeholder{
     margin-right: 15px;
 }
 
-.navbar_seccion:hover{
-     background-color: transparent;
+.navbar_seccion:hover {
+    background-color: transparent;
 }
 
-.navbar-start{
+.navbar-start {
     margin-left: 20px;
 }
 
-#header_contenedor_iz{
+#header_contenedor_iz {
     display: flex;
     align-content: center;
     height: 100%;
 }
 
-#header_contenedor_der{
+#header_contenedor_der {
     justify-self: flex-end;
 }
 
-#header_contenedor_iz img{
+#header_contenedor_iz img {
     width: 10.2vw;
     align-self: center;
     margin-right: 30px;
 }
 
-.header_contenedor_link{
+.header_contenedor_link {
     color: #fff;
     font-size: 16px;
     align-self: center;
     margin-left: 40px;
 }
 
-.header_contenedor_link .active{
+.header_contenedor_link .active {
     font-weight: bold;
     font-family: "Gotham";
 }
 
-.header_contenedor_link:hover{
+.header_contenedor_link:hover {
     color: #fff;
 }
 
-.subrayado_link{
+.subrayado_link {
     width: 80%;
     margin: 0 10%;
     height: 2px;
@@ -112,41 +116,43 @@ input::placeholder{
     display: block;
 }
 
-.header_contenedor_link a{
+.header_contenedor_link a {
     color: #fff;
     opacity: 1;
 }
 
-.header_contenedor_link a:hover{
+.header_contenedor_link a:hover {
     opacity: .5;
     transition: .5s;
 }
 
+
 /* LISTA DE CORREOS */
-#contenedor_lista_correos{
+
+#contenedor_lista_correos {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: 0 5vw;
 }
 
-#contenedor_contenido{
+#contenedor_contenido {
     width: 100%;
     height: 100%;
 }
 
-.contenedor_correo{
+.contenedor_correo {
     border-radius: 5px;
 }
 
-#agregar_correo{
-    border: dashed 3px rgba(89,165,216,.5);
+#agregar_correo {
+    border: dashed 3px rgba(89, 165, 216, .5);
     padding: 20px;
     height: 100%;
     cursor: pointer;
 }
 
-.input_file{
-    background-color: rgba(89,165,216,.25);
+.input_file {
+    background-color: rgba(89, 165, 216, .25);
     height: 100%;
     border-radius: 5px;
     background-image: url('../img/subir.png');
@@ -157,29 +163,29 @@ input::placeholder{
     transition: .5s;
 }
 
-.input_file:hover{
+.input_file:hover {
     opacity: .6;
     background-size: 55%;
     transition: .5s;
 }
 
-#file{
-    opacity:0;
+#file {
+    opacity: 0;
     height: 100%;
-    width:100%;
+    width: 100%;
     cursor: pointer;
 }
 
-.column.correo{
+.column.correo {
     height: 300px;
 }
 
-.contenedor_correo.correo{
+.contenedor_correo.correo {
     border: solid 3px #444247;
     height: 100%;
 }
 
-.correo_vis{
+.correo_vis {
     height: 70%;
     width: 100%;
     background-image: url('../img/mailexample.jpg');
@@ -188,17 +194,17 @@ input::placeholder{
     opacity: .8;
 }
 
-.correo_vis_overlay{
+.correo_vis_overlay {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     cursor: pointer;
     justify-content: space-between;
     padding: 2.5vw;
 }
 
-.correo_info{
+.correo_info {
     height: 30%;
     width: 100%;
     background-color: #444247;
@@ -206,7 +212,7 @@ input::placeholder{
     padding: 10px;
 }
 
-.titulo_correo{
+.titulo_correo {
     font-family: "Gotham";
     font-weight: bold;
     display: block;
@@ -215,34 +221,38 @@ input::placeholder{
     margin-bottom: 5px;
 }
 
-.descr_correo{
+.descr_correo {
     color: #fff;
     display: block;
 }
 
-.eliminar_icono, .view_icono, .reemplazar_icono{
+.eliminar_icono,
+.view_icono,
+.reemplazar_icono {
     width: 100%;
     height: 50%;
     transition: .5s;
 }
 
-.reemplazar_icono{
+.reemplazar_icono {
     background: url('../img/reemplazar.png') no-repeat center;
 }
 
-.view_icono{
+.view_icono {
     background: url('../img/ver.png') no-repeat center;
 }
 
-.eliminar_icono{
+.eliminar_icono {
     background: url('../img/borrar.png') no-repeat center;
 }
 
-.eliminar_icono:hover, .view_icono:hover, .reemplazar_icono:hover{
+.eliminar_icono:hover,
+.view_icono:hover,
+.reemplazar_icono:hover {
     opacity: .6;
 }
 
-.buscar_icono{
+.buscar_icono {
     background-image: url('../img/buscar.png');
     height: 16px;
     width: 16px;
@@ -250,8 +260,8 @@ input::placeholder{
     background-size: contain;
 }
 
-.contenedor_icono{
-    width:  auto;
+.contenedor_icono {
+    width: auto;
     height: auto;
     font-size: 10px;
     font-weight: bold;
@@ -263,7 +273,7 @@ input::placeholder{
     justify-content: center;
 }
 
-.paginador_flecha{
+.paginador_flecha {
     width: 35px;
     height: 35px;
     background-color: #59a5d8;
@@ -274,17 +284,17 @@ input::placeholder{
     margin-left: 15px;
 }
 
-#siguiente_pag{
+#siguiente_pag {
     transform: rotate(180deg);
 }
 
-.contenedor_paginador{
+.contenedor_paginador {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.contenedor_busqueda{
+.contenedor_busqueda {
     height: 35px;
     width: 200px;
     border-radius: 5px;
@@ -295,13 +305,13 @@ input::placeholder{
     padding: 0 10px;
 }
 
-.contenedor_busqueda input{
-    border:none;
+.contenedor_busqueda input {
+    border: none;
     background: none;
     width: 100%;
 }
 
-#buscar_submit{
+#buscar_submit {
     height: 35px;
     min-width: 75px;
     border: none;
@@ -314,9 +324,10 @@ input::placeholder{
     transition: .5s;
 }
 
-#buscar_submit:hover{
+#buscar_submit:hover {
     background-color: #4782aa;
 }
+
 
 /* login styles ------------------------------------------------------------------------------ */
 
@@ -458,24 +469,47 @@ div .column img {
 /* end login styles  ------------------------------------------------------------------------------------ */
 
 
-/* Nav bar Style --------------  */
+/* Listado de Usuarios */
 
-.navbar {
-    background-color: #333333;
+.circle,
+.name_content {
+    display: inline-block;
+    padding: 0 45px;
+    vertical-align: middle;
 }
 
-#p_usuario {
-    color: white;
-    font-family: lato;
+.checkbox_content {
     margin: 0 25px;
-    font-weight: bold;
+    margin-right: 3em !important;
 }
 
-.navbar-item {
+.name_content {
+    font-size: 20px;
+    font-weight: black;
+}
+
+.circle {
+    background-color: grey;
+    padding: 15px;
+    border-radius: 50%;
     color: white;
-    font-family: lato;
+    font-weight: bold;
 }
 
-.navbar-item:hover {
-    font-weight: bold;
+.cajon_lista {
+    background-color: #bbf3fa;
+    cursor: pointer;
+}
+
+.cajon_lista:hover {
+    background-color: #a9f5ff;
+    cursor: pointer;
+}
+
+.cajon_lista_impar {
+    background-color: white;
+}
+
+.cajon_lista_impar:hover {
+    background-color: rgb(230, 230, 230);
 }
