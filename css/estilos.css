@@ -645,3 +645,24 @@ div .column img {
 .cajon_lista_impar:hover {
     background-color: rgb(230, 230, 230);
 }
+
+.iconos_opciones {
+    display: inline;
+    vertical-align: middle;
+    line-height: 50px;
+    float: right;
+    margin-right: 15px;
+}
+
+.iconos_opciones i {
+    font-size: 25px;
+    margin: 0 15px;
+    vertical-align: middle;
+    opacity: .5;
+}
+
+.iconos_opciones i:hover {
+    opacity: 1;
+}
+
+.cajones_interiores {}

@@ -5,18 +5,18 @@ $(document).ready(function(){
 
     /* COMIENZA METODOS PARA OVERLAY EN CORREOS */
     $('.correo_vis_overlay').hide();
-    
-    $('.contenedor_correo').mouseover(function(){
+
+    $('.contenedor_correo').mouseover(function() {
         $(this).find('.correo_vis_overlay').fadeIn();
     });
 
-    $('.contenedor_correo').mouseleave(function(){
+    $('.contenedor_correo').mouseleave(function() {
         $(this).find('.correo_vis_overlay').fadeOut();
     });
     /* FIN METODOS PARA OVERLAY EN CORREOS */
 
     /* COMIENZA METODO PARA CAMBIAR SECCION EN NAVBAR */
-    $('.header_contenedor_link').click(function(){
+    $('.header_contenedor_link').click(function() {
         $('.header_contenedor_link').find('.active').removeClass('active');
         $('.header_contenedor_link').find('.subrayado_link').addClass('hidden');
         $(this).find('.subrayado_link').removeClass('hidden');
@@ -81,11 +81,29 @@ $(document).ready(function() {
     //End Login Function ------------------------------------------------------------------------------------------------------------
 
 
-    //Listado Correos Function ------------------------------------------------------------------------------------------------------
+    //Listado Usuarios Function ------------------------------------------------------------------------------------------------------
+
+    $('.icono_cajon_add').on('click', function() {
+        alert('add');
+    });
 
 
+    $('.icono_cajon_abrir').on('click', function() {
+        if ($(this).parent().parent().find('div.cajones_interiores').css('display') == 'none') {
+            $(this).parent().parent().find('div.cajones_interiores').slideDown(500);
+        } else {
+            $(this).parent().parent().find('div.cajones_interiores').slideUp(500);
+        }
+        /*
+                if ($('.cajones_interiores').css('display') == 'none') {
+                    $('.cajones_interiores').slideDown(500);
+                } else {
+                    $('.cajones_interiores').slideUp(500);
+                }
+        */
+    });
 
-    //End Listado Correos Function --------------------------------------------------------------------------------------------------
+    //End Listado Usuarios Function --------------------------------------------------------------------------------------------------
 
 
 
