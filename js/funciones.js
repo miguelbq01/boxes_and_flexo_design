@@ -1,7 +1,4 @@
-$(document).ready(function(){
-    $('img').click(function(){
-        $('#modal_nuevo_cliente').parent().addClass('is-active');
-    });
+$(document).ready(function() {
 
     /* COMIENZA METODOS PARA OVERLAY EN CORREOS */
     $('.correo_vis_overlay').hide();
@@ -26,25 +23,23 @@ $(document).ready(function(){
 
     /* COMIENZA METODOS EN NUEVO CLIENTE */
     funciones_nuevocliente();
-    $('#agregar_otro_cliente').click(function(){
+    $('#agregar_otro_cliente').click(function() {
         var nuevocliente = $('#nuevocliente').clone();
         $(".contenedor_nuevo_cliente_inputs").append(nuevocliente).fadeIn(400);
         funciones_nuevocliente();
     });
 
-    function funciones_nuevocliente (){
-        $('.icono_x').click(function(){
-            if($('.nuevo_cliente_contenedor').length > 1)
-            {
+    function funciones_nuevocliente() {
+        $('.icono_x').click(function() {
+            if ($('.nuevo_cliente_contenedor').length > 1) {
                 $(this).parent().fadeOut().remove();
             }
-            
+
         });
     }
     /* FIN METODOS EN NUEVO CLIENTE */
-});
 
-$(document).ready(function() {
+
     //Login Function ------------------------------------------------------------------------------------------------------------
 
     $('#login_form').fadeIn(1);
@@ -75,7 +70,8 @@ $(document).ready(function() {
     });
 
     $('.delete').on('click', function() {
-        $(this).parent().slideUp();
+        $(this).parent().parent().slideUp();
+        $('.modal-background').fadeOut();
     });
 
     //End Login Function ------------------------------------------------------------------------------------------------------------
@@ -83,29 +79,22 @@ $(document).ready(function() {
 
     //Listado Usuarios Function ------------------------------------------------------------------------------------------------------
 
-    $('.icono_cajon_add').on('click', function() {
-        alert('add');
+    //MODAL
+    $('.icono_cajon_add').click(function() {
+        $('#modal_nuevo_cliente').parent().addClass('is-active');
     });
 
 
     $('.icono_cajon_abrir').on('click', function() {
         if ($(this).parent().parent().find('div.cajones_interiores').css('display') == 'none') {
             $(this).parent().parent().find('div.cajones_interiores').slideDown(500);
+            $('icono_cajon_abrir').rotate();
         } else {
             $(this).parent().parent().find('div.cajones_interiores').slideUp(500);
         }
-        /*
-                if ($('.cajones_interiores').css('display') == 'none') {
-                    $('.cajones_interiores').slideDown(500);
-                } else {
-                    $('.cajones_interiores').slideUp(500);
-                }
-        */
     });
 
     //End Listado Usuarios Function --------------------------------------------------------------------------------------------------
-
-
 
 
 

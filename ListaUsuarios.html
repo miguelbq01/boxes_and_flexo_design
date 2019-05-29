@@ -13,6 +13,52 @@
 </head>
 
 <body>
+    <!-- MODALES -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card" id="modal_nuevo_cliente">
+            <header class="modal-card-head">
+                <p class="modal-card-title"> NUEVO CLIENTE </p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="contenedor_nuevo_cliente_inputs">
+                    <div class="nuevo_cliente_contenedor" id="nuevocliente">
+                        <div class="input_contenedor">
+                            <label>Nombre del cliente</label>
+                            <input class="input_gris nombrecliente" placeholder="Nombre de cliente">
+                        </div>
+                        <div class="input_contenedor">
+                            <label>Puesto</label>
+                            <input class="input_gris puestocliente" placeholder="Puesto">
+                        </div>
+                        <div class="input_contenedor">
+                            <label>Correo electrónico</label>
+                            <input class="input_gris correocliente" placeholder="Correo electrónico">
+                        </div>
+                        <span class="icono_x"></span>
+                    </div>
+                </div>
+                <p id="agregar_otro_cliente">Agregar otro cliente +</p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button principal">Guardar</button>
+                <button class="button secundario">Cancel</button>
+            </footer>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="contenedor_preview">
+
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- FIN DE MODALES -->
+
+
     <!-- HEADER NAVBAR -->
     <nav id="header_contenedor" role="navigation" aria-label="main navigation">
         <div id="header_contenedor_iz">
@@ -95,7 +141,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -109,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -123,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -137,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                     </div>
@@ -147,15 +193,13 @@
 
 
             </div>
-
-
             <!-- FIN CAJON -->
             <!-- FIN CAJON -->
+
 
             <!-- CAJON -->
             <!-- CAJON -->
             <div class="cajon_lista_impar column">
-
                 <div class="checkbox_content pretty p-switch">
                     <input type="checkbox" />
                     <div class="state p-warning">
@@ -172,9 +216,12 @@
                 </div>
 
                 <div class="iconos_opciones">
-                    <i class="fas fa-user-plus"></i>
-                    <i class="fas fa-angle-right"></i>
+                    <i class="icono_cajon_add fas fa-user-plus"></i>
+                    <i class="icono_cajon_abrir fas fa-angle-right"></i>
                 </div>
+
+                <!-- cajones interiores -->
+                <!-- cajones interiores -->
                 <div class="cajones_interiores container">
                     <div class="section">
                         <div class="columns">
@@ -188,7 +235,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -202,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -216,7 +263,7 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                         <div class="columns">
@@ -230,44 +277,22 @@
                                 </div>
                             </div>
                             <div class="column">Carlos Alberto Abril Lee</div>
-                            <div class="column">Diseñador Grafico</div>
+                            <div class="column"><b>Diseñador Grafico</b></div>
                             <div class="column">carlosabrlee@gmail.com</div>
                         </div>
                     </div>
                 </div>
+                <!-- fin cajones interiores -->
+                <!-- fin cajones interiores -->
 
 
             </div>
             <!-- FIN CAJON -->
             <!-- FIN CAJON -->
 
-            <!-- CAJON -->
-            <!-- CAJON -->
-            <div class="cajon_lista column">
 
-                <div class="checkbox_content pretty p-switch">
-                    <input type="checkbox" />
-                    <div class="state p-warning">
-                        <label></label>
-                    </div>
-                </div>
 
-                <div class="circle">
-                    <p class="initials">MS</p>
-                </div>
 
-                <div class="name_content">
-                    <p>Empresa de Boxes & Flexo con el nombre bien largo</p>
-                </div>
-
-                <div class="iconos_opciones">
-                    <i class="fas fa-user-plus"></i>
-                    <i class="fas fa-angle-right"></i>
-                </div>
-            </div>
-
-            <!-- FIN CAJON -->
-            <!-- FIN CAJON -->
         </div>
     </div>
 </body>
