@@ -670,3 +670,22 @@ div .column img {
 .cajones_interiores {
     display: none;
 }
+
+.btn {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #59a5d8;
+    box-shadow: 3px 3px 10px 2px grey;
+}
+
+.btn:hover {
+    background: #3348c4;
+}
+
+.btn i {
+    color: white;
+    font-size: 25px;
+    margin-top: 30%;
+}
