@@ -220,14 +220,15 @@ input::placeholder{
     display: block;
 }
 
-.eliminar_icono, .view_icono, .reemplazar_icono{
+.eliminar_icono, .view_icono, .editar_icono{
     width: 100%;
     height: 50%;
     transition: .5s;
 }
 
-.reemplazar_icono{
-    background: url('../img/reemplazar.png') no-repeat center;
+.editar_icono{
+    background: url('../img/editar.png') no-repeat center;
+    background-size: contain;
 }
 
 .view_icono{
@@ -238,7 +239,7 @@ input::placeholder{
     background: url('../img/borrar.png') no-repeat center;
 }
 
-.eliminar_icono:hover, .view_icono:hover, .reemplazar_icono:hover{
+.eliminar_icono:hover, .view_icono:hover, .editar_icono:hover{
     opacity: .6;
 }
 
@@ -425,6 +426,139 @@ div .column img {
 .footer div p {
     color: white;
     margin-top: 15px;
+}
+
+.modal-card-title{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gotham';
+}
+
+.modal-card-body{
+    padding: 25px 50px;
+}
+
+
+.modal-card-head{
+    background-color: #3348c4;
+    border: none;
+}
+
+.principal{
+    background-color: #3348c4;
+    color: #fff;
+    transition: .25s;
+}
+
+.principal:hover{
+    color: #fff;
+    opacity: .7;
+}
+
+.secundario{
+    color: #3348c4;
+    transition: .25s;
+}
+
+.secundario:hover{
+    color: #3348c4;
+    opacity: .7;
+}
+
+.button{
+    border: none;
+}
+
+.modal-card-foot{
+    justify-content: center;
+    background-color: #fff;
+    border: none;
+}
+
+.nuevo_cliente_contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.input_contenedor label{
+    font-size: 12px;
+    font-family: 'Gotham';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input_gris{
+    border: none;
+    background-color: #e4e4e4;
+    color: #474747;
+    padding: 7px 10px;
+}
+
+.input_gris::placeholder{
+    color: #afafaf;
+}
+
+#modal_nuevo_cliente{
+    width: auto;
+}
+
+.input_contenedor{
+    margin-right: 50px;
+}
+
+.nombrecliente, .correocliente{
+    width: 250px;
+}
+
+.icono_x{
+    background-image: url('../img/icono_borrar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 18px;
+    min-height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.icono_x:hover{
+    opacity: .7;
+}
+
+#agregar_otro_cliente{
+    color: #3348c4;
+    text-align: center;
+    font-family: 'Gotham';
+    cursor: pointer;
+    transition: .25s;
+}
+
+#agregar_otro_cliente:hover{
+    opacity: .7;
+}
+
+#nuevocliente{
+    animation: entrada ease .75s;
+}
+
+.contenedor_preview{
+    height: 90vh;
+    width: 100%;
+    background-color: red;
+}
+
+@keyframes entrada{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1200px) {

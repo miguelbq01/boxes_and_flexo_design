@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $('img').click(function(){
+        $('#modal_nuevo_cliente').parent().addClass('is-active');
+    });
+
     /* COMIENZA METODOS PARA OVERLAY EN CORREOS */
     $('.correo_vis_overlay').hide();
     
@@ -19,6 +23,25 @@ $(document).ready(function(){
         $(this).find('a').addClass('active');
     });
     /* FIN METODO PARA CAMBIAR SECCION EN NAVBAR */
+
+    /* COMIENZA METODOS EN NUEVO CLIENTE */
+    funciones_nuevocliente();
+    $('#agregar_otro_cliente').click(function(){
+        var nuevocliente = $('#nuevocliente').clone();
+        $(".contenedor_nuevo_cliente_inputs").append(nuevocliente).fadeIn(400);
+        funciones_nuevocliente();
+    });
+
+    function funciones_nuevocliente (){
+        $('.icono_x').click(function(){
+            if($('.nuevo_cliente_contenedor').length > 1)
+            {
+                $(this).parent().fadeOut().remove();
+            }
+            
+        });
+    }
+    /* FIN METODOS EN NUEVO CLIENTE */
 });
 
 $(document).ready(function() {
