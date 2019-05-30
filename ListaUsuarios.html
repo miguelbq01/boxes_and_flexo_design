@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- MODALES -->
+    <!-- MODALES CLIENTE -->
     <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-card" id="modal_nuevo_cliente">
@@ -36,6 +36,34 @@
                             <label>Correo electrónico</label>
                             <input class="input_gris correocliente" placeholder="Correo electrónico">
                         </div>
+                        <span class="icono_x"></span>
+                    </div>
+                </div>
+                <p id="agregar_otro_cliente">Agregar otro cliente +</p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button principal">Guardar</button>
+                <button class="button secundario">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- MODALES EMPRESA -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card" id="modal_nueva_empresa">
+            <header class="modal-card-head">
+                <p class="modal-card-title"> NUEVA EMPRESA </p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="contenedor_nuevo_cliente_inputs">
+                    <div class="nuevo_cliente_contenedor" id="nuevocliente">
+                        <div class="input_contenedor">
+                            <label>Nombre del Empresa</label>
+                            <input class="input_gris nombrecliente" placeholder="Nombre de Empresa">
+                        </div>
+
                         <span class="icono_x"></span>
                     </div>
                 </div>

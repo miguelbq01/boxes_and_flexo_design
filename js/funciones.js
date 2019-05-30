@@ -79,10 +79,15 @@ $(document).ready(function() {
 
     //Listado Usuarios Function ------------------------------------------------------------------------------------------------------
 
-    //MODAL
+    //MODAL CLIENTES
     $('.icono_cajon_add').click(function() {
         $('#modal_nuevo_cliente').parent().addClass('is-active');
     });
+    //MODAL EMPRESA
+    $('.btn').click(function() {
+        $('#modal_nueva_empresa').parent().addClass('is-active');
+    });
+
 
 
     $('.icono_cajon_abrir').on('click', function() {
@@ -105,13 +110,11 @@ $(document).ready(function() {
     });
 
     $('.btn_dia_envio').on('click', function() {
-
         if ($(this).hasClass('dia_activo')) {
             $(this).removeClass('dia_activo');
         } else {
             $(this).addClass('dia_activo');
         }
-
     });
     //End Listado Usuarios Function --------------------------------------------------------------------------------------------------
 
