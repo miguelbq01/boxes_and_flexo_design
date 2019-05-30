@@ -630,21 +630,11 @@ div .column img {
 }
 
 .cajon_lista {
-    background-color: #bbf3fa;
-    cursor: pointer;
-}
-
-.cajon_lista:hover {
-    background-color: #a9f5ff;
-    cursor: pointer;
+    background-color: #59a5d869;
 }
 
 .cajon_lista_impar {
     background-color: white;
-}
-
-.cajon_lista_impar:hover {
-    background-color: rgb(230, 230, 230);
 }
 
 .iconos_opciones {
@@ -688,4 +678,43 @@ div .column img {
     color: white;
     font-size: 25px;
     margin-top: 30%;
+}
+
+.cajon_cliente {
+    border-radius: 25px;
+}
+
+.cajon_cliente:hover {
+    background-color: #59a5d8;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedor_dias {
+    display: none;
+}
+
+.contenedor_dias button {
+    display: inline-block;
+    font-family: lato;
+    border: none;
+    background-color: #59a5d8;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: all .5s;
+    font-size: 16px;
+    box-shadow: 3px 6px 12px rgb(102, 102, 102);
+}
+
+.contenedor_dias button:hover {
+    background-color: #407fa8;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px rgb(102, 102, 102);
+}
+
+.dia_activo {
+    background-color: black !important;
 }

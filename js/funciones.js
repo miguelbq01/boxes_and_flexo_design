@@ -87,13 +87,32 @@ $(document).ready(function() {
 
     $('.icono_cajon_abrir').on('click', function() {
         if ($(this).parent().parent().find('div.cajones_interiores').css('display') == 'none') {
-            $(this).parent().parent().find('div.cajones_interiores').slideDown(500);
+            $(this).parent().parent().find('div.cajones_interiores').slideDown(250);
             $('icono_cajon_abrir').rotate();
         } else {
-            $(this).parent().parent().find('div.cajones_interiores').slideUp(500);
+            $(this).parent().parent().find('div.cajones_interiores').slideUp(250);
+            $(this).parent().parent().find('div.contenedor_dias').slideUp(250);
         }
     });
 
+
+    $('.cajon_cliente').on('click', function() {
+        if ($(this).parent().find('.contenedor_dias').css('display') == 'none') {
+            $(this).parent().find('.contenedor_dias').slideDown(250);
+        } else {
+            $(this).parent().find('.contenedor_dias').slideUp(250);
+        }
+    });
+
+    $('.btn_dia_envio').on('click', function() {
+
+        if ($(this).hasClass('dia_activo')) {
+            $(this).removeClass('dia_activo');
+        } else {
+            $(this).addClass('dia_activo');
+        }
+
+    });
     //End Listado Usuarios Function --------------------------------------------------------------------------------------------------
 
 
