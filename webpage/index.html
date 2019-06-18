@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html id="html_landing">
+    <head>
+       <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+       <title>Boxes & Flexo</title>
+       <link rel="stylesheet"  href="css/bulma.css">
+       <link rel="stylesheet"  href="css/estilos.css">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Rufina:400,700&display=swap" rel="stylesheet"> 
+       <script
+       src="https://code.jquery.com/jquery-3.4.1.js"
+       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+       crossorigin="anonymous"></script>
+       <script src="js/funciones.js"></script>
+       
+    </head>
+    <body>
+        <div class="overlay_contenedor">
+            <div class="columns">
+                <div class="column">
+                    <span class="navbar_logo" id="overlay_logo"></span>
+                </div>
+                <div class="column close_overlay_contenedor">
+                    <span class="close_overlay"></span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column overlay_menu">
+                    <a class="overlay_row" href="#section_landing">
+                        <img class="circulocubo overlay_icon" src="images/icono_circulocubo.png">
+                        <h1 class="title serif">Home <span class="underlineB"></span></h1>
+                    </a>
+                    <a class="overlay_row" href="#section_aboutus">
+                        <img class="circulocubo overlay_icon" src="images/icono_circulocubo.png">
+                        <h1 class="title serif">About Us <span class="underlineB"></span></h1>
+                    </a>
+                    <a class="overlay_row" href="#section_products">
+                        <img class="circulocubo overlay_icon" src="images/icono_circulocubo.png">
+                        <h1 class="title serif">Products <span class="underlineB"></span></h1>
+                    </a>
+                    <a class="overlay_row" href="#section_contact">
+                        <img class="circulocubo overlay_icon" src="images/icono_circulocubo.png">
+                        <h1 class="title serif">Contact Us <span class="underlineB"></span></h1>
+                    </a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column white terms_overlay"><a class="white">Terms & Conditions</a><a class="white">Privacy Policy</a></div>
+                <div class="column overlay_rs">
+                    <p class="white">© Boxes & Flexo 2019</p>
+                    <a href="#" class="fb_icon"></a>
+                    <a href="#" class="tw_icon"></a>
+                    <a href="#" class="insta_icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_contenedor">
+            <div class="sidebar_menu">
+                <a role="button" class="navbar-burger burger" id="sidebar_burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="sidebar_sections">
+                <a class="icono_caja" href="#section_landing" id="sidebar_section1"></a>
+                <a class="icono_circulolinea" href="#section_aboutus" id="sidebar_section2"></a>
+                <a class="icono_circulolinea" href="#section_products" id="sidebar_section3"></a>
+                <a class="icono_circulolinea" href="#section_contact" id="sidebar_section4"></a>
+            </div>
+        </div>
+        <section class="hero is-fullheight sections_principal" id="section_landing">
+            <!-- NAVBAR -->
+            <div class="hero-head">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item navbar_logo blanco" href="#"></a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="link navbar-item">HOME</a>
+                            <a class="link navbar-item">ABOUT US</a>
+                            <a class="link navbar-item">PRODUCTS</a>
+                            <a class="link navbar-item">CONTACT</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- TEXTO PRINCIPAL -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <img class="circulocubo" src="images/icono_circulocubo.png">
+                    <h1 class="title serif">The label and boxes <br> solutions for your business.</h1>
+                </div>
+            </div>
+            <!-- MOUSE SCROLL -->
+            <div class="hero-foot">
+                <div class="container has-text-centered">
+                    <img id="icono_mouse" src="images/mouse.png">
+                    <img src="images/flecha.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="section is-medium sections_principal" id="section_aboutus">
+            <div class="container">
+                <div class=" columns">
+                    <div class="column is-6">
+                        <h5>Boxes & Flexo</h5>
+                        <h2 class="serif">This is who we are and what we do.</h2>
+                        <br>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida mattis eros et dignissim. Integer mollis urna venenatis, sodales ipsum eget, aliquam arcu. Praesent pretium tempor nunc, id commodo orci tristique et. Integer efficitur cursus elit, ut efficitur lacus congue ut.</h4>
+                        <br>
+                        <ul>
+                            <li class="bullet">Information about diploma.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                            <li class="bullet">Information about diploma.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                            <li class="bullet">Information about diploma.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                        </ul>
+                    </div>
+                    <div class="column is-5 is-offset-1">
+                        <span class="image_aboutus" id="image_abotus_mb"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRODUCTS -->
+        <section class="section is-medium sections_principal" id="section_products">
+            <div class="container">
+                <div class="columns is-desktop">
+                    <div class="column is-5">
+                        <div class="columns products" id="images_nomb">
+                            <div class="column">
+                                <span class="image_aboutus"></span>
+                            </div>
+                            <div class="column">
+                                <span class="image_aboutus"></span>
+                            </div>
+                        </div>
+                        <div class="columns products">
+                            <div class="column">
+                                <span id="image_products_mb" class="image_aboutus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <h5>Products</h5>
+                        <h2 class="serif">Driven by quality and excellence.</h2>
+                        <br>
+                        <h4>Our commitment is to always provide our customers with the best quality, cost effective, 
+                            creative packaging and label products, meeting and exceeding expectations.</h4>
+                        <br>
+                        <br>
+                        <div class="column is-11 testimonial_contenedor">
+                            <h3><b class="serif">“The best and fastest service. They have surpassed any and all expectations.”</b></h3>
+                            <h4 class="align_self_right">- John Doe C.</h4>
+                            <h5 class="align_self_right"><i>Company Name</i></h5>
+                        </div>
+                        <a class="columns mas_productos">
+                            <h3 class="column is-narrow">View more products<span class="underlineN"></span></h3>
+                            <div class="column"><span class="flecha_productos"><img src="images/flechaN.png"> </span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="section is-medium sections_principal" id="section_contact">
+            <div class="container height100">
+                <div class="columns height100">
+                    <div class="column is-6 contacto_sect">
+                        <div class="contact_form_row"><h5 class="white">Contact Us</h5><span class="contact_lineaUp"></span></div>
+                        <div class="contact_form_row">
+                            <div class="contact_form_column1">
+                                <img class="circulocubo" id="cubo_margin" src="images/icono_circulocubo.png">
+                                <span class="contact_lineaLeft"></span>
+                            </div>
+                            <div class="contact_form_column2">
+                                <h1 class="title2 serif">Tell us how we can help you.</h1>
+                                <h5 class="white light">Send us your doubts, requests or feedback by filling the form below and we'll do our best to get back in contact with you.</h5>
+                                <form>
+                                    <div class="form_row">
+                                        <input id="form_name" class="input_custom" type="text" required>
+                                        <label for="form_name" class="form_label">Full name</label>
+                                    </div>
+                                    <div class="form_row">
+                                        <input id="form_email" class="input_custom" type="text" required>
+                                        <label for="form_email" class="form_label">Email</label>
+                                    </div>
+                                    <div class="form_row">
+                                        <input id="form_subject" class="input_custom" type="text" required>
+                                        <label for="form_subject" class="form_label">Subject</label>
+                                    </div>
+                                    <div class="form_row">
+                                        <textarea id="form_message" name="" rows="w" class="textarea_custom" required></textarea>
+                                        <label for="form_message" class="form_label" id="form_label_textarea">Your message...</label>
+                                    </div>
+                                    <button type="submit" class="submit_custom">SEND</button>
+                                </form>
+                            </div>
+                            <div class="contact_form_column3">
+                                <span class="contact_lineaLeft"></span>
+                            </div>
+                        </div>
+                        <div class="contact_form_row">
+                            <span class="contact_lineaDown"></span>
+                        </div>
+                    </div>
+                    <div class="column height100 is-5 is-offset-1 contacto_sect">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.8825697470519!2d-115.4684759856193!3d32.64594618902882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770772706ed2d%3A0xc3b746121a21f3aa!2sCalle+De+La+Industria+529%2C+Zona+Industrial%2C+Mexicali%2C+B.C.!5e0!3m2!1sen!2smx!4v1559275360139!5m2!1sen!2smx" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <span class="map_bg"></span>
+                        <div class="columns">
+                            <div class="column">
+                                <br>
+                                <br>
+                                <h3 class="serif white bandf">Boxes & Flexo</h3>
+                                <p class="white"> De La Industria #529</p>
+                                <p class="white"> Zona Industrial</p>
+                                <p class="white"> Mexicali, Baja Califonia, Mexico</p>
+                            </div>
+                            <div class="column info_2">
+                                <b><p class="white">(686) 556-1107</p></b>
+                                <p class="white">correo@boxesandflexo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<script>
+    /*!
+ * in-view 0.6.1 - Get notified when a DOM element enters or exits the viewport.
+ * Copyright (c) 2016 Cam Wiegert <cam@camwiegert.com> - https://camwiegert.github.io/in-view
+ * License: MIT
+ */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.inView=e():t.inView=e()}(this,function(){return function(t){function e(r){if(n[r])return n[r].exports;var i=n[r]={exports:{},id:r,loaded:!1};return t[r].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var i=n(2),o=r(i);t.exports=o["default"]},function(t,e){function n(t){var e=typeof t;return null!=t&&("object"==e||"function"==e)}t.exports=n},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var i=n(9),o=r(i),u=n(3),f=r(u),s=n(4),c=function(){if("undefined"!=typeof window){var t=100,e=["scroll","resize","load"],n={history:[]},r={offset:{},threshold:0,test:s.inViewport},i=(0,o["default"])(function(){n.history.forEach(function(t){n[t].check()})},t);e.forEach(function(t){return addEventListener(t,i)}),window.MutationObserver&&addEventListener("DOMContentLoaded",function(){new MutationObserver(i).observe(document.body,{attributes:!0,childList:!0,subtree:!0})});var u=function(t){if("string"==typeof t){var e=[].slice.call(document.querySelectorAll(t));return n.history.indexOf(t)>-1?n[t].elements=e:(n[t]=(0,f["default"])(e,r),n.history.push(t)),n[t]}};return u.offset=function(t){if(void 0===t)return r.offset;var e=function(t){return"number"==typeof t};return["top","right","bottom","left"].forEach(e(t)?function(e){return r.offset[e]=t}:function(n){return e(t[n])?r.offset[n]=t[n]:null}),r.offset},u.threshold=function(t){return"number"==typeof t&&t>=0&&t<=1?r.threshold=t:r.threshold},u.test=function(t){return"function"==typeof t?r.test=t:r.test},u.is=function(t){return r.test(t,r)},u.offset(0),u}};e["default"]=c()},function(t,e){"use strict";function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i=function(){function t(e,r){n(this,t),this.options=r,this.elements=e,this.current=[],this.handlers={enter:[],exit:[]},this.singles={enter:[],exit:[]}}return r(t,[{key:"check",value:function(){var t=this;return this.elements.forEach(function(e){var n=t.options.test(e,t.options),r=t.current.indexOf(e),i=r>-1,o=n&&!i,u=!n&&i;o&&(t.current.push(e),t.emit("enter",e)),u&&(t.current.splice(r,1),t.emit("exit",e))}),this}},{key:"on",value:function(t,e){return this.handlers[t].push(e),this}},{key:"once",value:function(t,e){return this.singles[t].unshift(e),this}},{key:"emit",value:function(t,e){for(;this.singles[t].length;)this.singles[t].pop()(e);for(var n=this.handlers[t].length;--n>-1;)this.handlers[t][n](e);return this}}]),t}();e["default"]=function(t,e){return new i(t,e)}},function(t,e){"use strict";function n(t,e){var n=t.getBoundingClientRect(),r=n.top,i=n.right,o=n.bottom,u=n.left,f=n.width,s=n.height,c={t:o,r:window.innerWidth-u,b:window.innerHeight-r,l:i},a={x:e.threshold*f,y:e.threshold*s};return c.t>e.offset.top+a.y&&c.r>e.offset.right+a.x&&c.b>e.offset.bottom+a.y&&c.l>e.offset.left+a.x}Object.defineProperty(e,"__esModule",{value:!0}),e.inViewport=n},function(t,e){(function(e){var n="object"==typeof e&&e&&e.Object===Object&&e;t.exports=n}).call(e,function(){return this}())},function(t,e,n){var r=n(5),i="object"==typeof self&&self&&self.Object===Object&&self,o=r||i||Function("return this")();t.exports=o},function(t,e,n){function r(t,e,n){function r(e){var n=x,r=m;return x=m=void 0,E=e,w=t.apply(r,n)}function a(t){return E=t,j=setTimeout(h,e),M?r(t):w}function l(t){var n=t-O,r=t-E,i=e-n;return _?c(i,g-r):i}function d(t){var n=t-O,r=t-E;return void 0===O||n>=e||n<0||_&&r>=g}function h(){var t=o();return d(t)?p(t):void(j=setTimeout(h,l(t)))}function p(t){return j=void 0,T&&x?r(t):(x=m=void 0,w)}function v(){void 0!==j&&clearTimeout(j),E=0,x=O=m=j=void 0}function y(){return void 0===j?w:p(o())}function b(){var t=o(),n=d(t);if(x=arguments,m=this,O=t,n){if(void 0===j)return a(O);if(_)return j=setTimeout(h,e),r(O)}return void 0===j&&(j=setTimeout(h,e)),w}var x,m,g,w,j,O,E=0,M=!1,_=!1,T=!0;if("function"!=typeof t)throw new TypeError(f);return e=u(e)||0,i(n)&&(M=!!n.leading,_="maxWait"in n,g=_?s(u(n.maxWait)||0,e):g,T="trailing"in n?!!n.trailing:T),b.cancel=v,b.flush=y,b}var i=n(1),o=n(8),u=n(10),f="Expected a function",s=Math.max,c=Math.min;t.exports=r},function(t,e,n){var r=n(6),i=function(){return r.Date.now()};t.exports=i},function(t,e,n){function r(t,e,n){var r=!0,f=!0;if("function"!=typeof t)throw new TypeError(u);return o(n)&&(r="leading"in n?!!n.leading:r,f="trailing"in n?!!n.trailing:f),i(t,e,{leading:r,maxWait:e,trailing:f})}var i=n(7),o=n(1),u="Expected a function";t.exports=r},function(t,e){function n(t){return t}t.exports=n}])});
+</script>
