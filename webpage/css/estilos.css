@@ -10,6 +10,10 @@ a{
     cursor: pointer;
 }
 
+.hidden{
+    display: none !important;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -55,7 +59,7 @@ html{
 .contact_lineaDown{
     justify-self: flex-end;
     align-self: flex-end;
-    width: 97.5%;
+    width: 97%;
     height: 1px;
     background-color: #fff;
     vertical-align: middle;
@@ -95,10 +99,14 @@ html{
     
 }
 
+.section.is-medium{
+    padding: 6.5rem 1.5rem;
+}
+
 h2{
-    font-size: 3.8vw;
+    font-size: 3.2vw;
     font-weight: bold;
-    line-height: 4.8vw;
+    line-height: 4.2vw;
     transition: .5s;
 }
 
@@ -204,12 +212,19 @@ a.link.navbar-item:hover{
 
 .title2{
     color: #fff;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
 }
 
 .circulocubo{
+    position: absolute;
     width: 2.2vw;
     height: 2.2vw;
+    top: -3vw;
+}
+
+.circulocubo_menu{
+    width: 2.2vw;
+    height: 2.2vw; 
 }
 
 #icono_mouse{
@@ -231,9 +246,13 @@ img{
     max-width: inherit;
 }
 
+.testiomonial{
+    font-size: 1.25vw;
+}
+
 
 .flecha_productos{
-    padding: 1vw 0;
+    padding: .7vw 0;
     width: 2vw;
     height: auto;
     border: 2px solid #1a1a1a;
@@ -284,7 +303,7 @@ link:hover .underlineB{
 .sidebar_contenedor{
     display: flex;
     position: fixed;
-    right: 2vw;
+    right: 6vw;
     z-index: 31;
     flex-direction: column;
     justify-content: center;
@@ -312,24 +331,13 @@ link:hover .underlineB{
     height: 60%;
 }
 
-.icono_caja{
-    width: 19px;
-    height: 21.8px;
-    background-image: url('../images/cubo.png');
-    background-size: contain;
-    background-repeat: no-repeat; 
-    content: "";
-    display: block;
-    animation: fadeIn ease .5s;
-}
-
 .icono_caja.negro{
     background-image: url('../images/cuboN.png'); 
 }
 
 .icono_circulolinea{
-    width: 15px;
-    height: 15px;
+    width: .5vw;
+    height: .5vw;
     border: #fff solid 1px;
     border-radius: 100%;
     display: block;
@@ -349,6 +357,22 @@ link:hover .underlineB{
 #sidebar_section1,#sidebar_section2,#sidebar_section3,#sidebar_section4{
     border-radius: 100%;
     color: #fff;
+}
+
+#sidebar_section1.icono_caja,#sidebar_section2.icono_caja,#sidebar_section3.icono_caja,#sidebar_section4.icono_caja{
+    border-radius: 0;
+    color: #fff;
+}
+
+.icono_caja{
+    width: 17px;
+    height: 18.8px;
+    background-image: url('../images/cubo.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    content: "";
+    display: block;
+    animation: fadeIn ease .5s;
 }
 
 /* FIN SIDEBAR */
@@ -406,12 +430,8 @@ link:hover .underlineB{
     display: inline-block;
 }
 
-.overlay_row:hover .underlineB{
-    width: 100%;
-}
-
 .overlay_row:hover{
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.05);
 }
 
 .overlay_row img{
@@ -438,7 +458,7 @@ link:hover .underlineB{
 
 .terms_overlay{
     margin-left: 6vw;
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 .terms_overlay a:last-child{
@@ -459,8 +479,8 @@ link:hover .underlineB{
 
 .fb_icon, .insta_icon, .tw_icon{
     transition: .5s;
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -530,11 +550,15 @@ link:hover .underlineB{
 .map_bg{
     background-color: #fff;
     opacity: .1;
-    width: 41.5%;
+    width: 33%;
     height: 80.5%;
     position: absolute;
     top: 5%;
     left: 60.5%;
+}
+
+.info_contacto{
+    font-size: .9vw;
 }
 
 iframe{
@@ -607,8 +631,8 @@ iframe{
     background: none;
     border: #fff solid 2px;
     color: #fff;
-    padding: 1vw;
-    width:25%;
+    padding: .75vw;
+    width: 25%;
     font-family: 'Rufina';
     font-weight: bold;
     margin: auto;
@@ -641,7 +665,7 @@ iframe{
 }
 
 .productos_product{
-    height: 29.5vw;
+    height: 24vw;
     padding: 1.5vw;
     background: url('../images/bosque.jpg');
     display: flex;
@@ -652,6 +676,15 @@ iframe{
     width: 100%;
     position: relative;
     cursor: pointer;
+    box-shadow: 0 0 1vw .2vw rgba(0,0,0,.2);
+}
+
+#header_productos{
+    margin-top: 2vw;
+}
+
+#section_proyectos{
+    padding: 4rem 1.5rem;
 }
 
 .productos_product *{
@@ -674,6 +707,10 @@ iframe{
     background-color: rgba(255, 255, 255, 1);
 }
 
+.productos_product:hover{
+    box-shadow: 4px 4px 10px 2px rgba(0,0,0,.12);
+}
+
 .productos_product:hover .products_moredetails{
     color: #1a1a1a;
 }
@@ -686,6 +723,8 @@ iframe{
 .productos_flecha_img{
     margin: 0 .1vw;
     transition: .5s;
+    height: 10px;
+    width: 6px;
 }
 
 .productos_product:hover img{
@@ -765,7 +804,7 @@ iframe{
 }
 
 .products_product_title{
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .comilla_g{
@@ -825,6 +864,11 @@ iframe{
 
 #comilla_g2{
     display: none;
+}
+
+#seccion_productoespecifico{
+    display: block;
+    animation: fadeIn ease .5s;
 }
 
 

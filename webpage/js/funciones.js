@@ -108,6 +108,10 @@ $(document).ready(function(){
 
         /* FUNCION CAMBIAR PRODUCTO */
         $('.productos_product').click(function(){
+            if($('#seccion_productoespecifico').hasClass('hidden'))
+            {
+                $('#seccion_productoespecifico').removeClass('hidden');
+            }
             $('.productos_product').find('h2').addClass('white');
             $('.productos_product').removeClass('product_activo');
             $(this).addClass('product_activo'); 

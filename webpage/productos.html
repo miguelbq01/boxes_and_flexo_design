@@ -36,17 +36,17 @@
         <section class="section is-medium" id="section_ourwork">
             <div class="container">
                 <div class="columns">
-                    <div class="column has-text-centered">
-                        <img class="circulocubo" src="images/icono_circulocubo.png">
+                    <div class="column has-text-centered" id="header_productos">
+                        <img class="circulocubo_menu" src="images/icono_circulocubo.png">
                         <h1 class="title serif">View our work.</h1>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section is-medium">
+        <section class="section is-medium" id="section_proyectos">
             <div class="container">
                 <div class="columns">
-                    <div class="column">
+                    <div class="column is-offset-1">
                         <div class="productos_product productos_producto1">
                             <h2 class="white serif products_product_title">Mas té</h2>
                             <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
@@ -74,56 +74,59 @@
                             <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
                         </div>  
                     </div>
+                    <div class="column is-1"></div>
                 </div>
-                <div id="productos_producto_especifico" class="columns productos_producto3">
-                    <div class="column" id="productos_producto_especifico_column">
-                        <h2 id="productos_producto_especifico_titulo" class="serif">Mas té</h2>
-                        <h4 id="productos_producto_especifico_objetivo" class="light">Header number two with the objective of the project.</h4>
-                        <br>
-                        <p id="productos_producto_especifico_objetivo2">Our commitment is to always provide our customers with the best quality, cost effective, creative
-                            packaging and label products, meeting and exceeding ther expectations.
-                        </p>
-                        <br>
-                        <ul>
-                            <li id="workdone1" class="bullet">Work done explained.</li>
-                            <li id="workdone1_explained">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
-                            <li id="workdone2" class="bullet">More work explained.</li>
-                            <li id="workdone2_explained">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
-                        </ul>
-                        <br>
-                        <img id="productos_producto_especifico_logo" src="images/logoempresa.png">
-                    </div>
-                    <div class="column is-5 is-offset-1">
-                        <div class="columns height">
-                            <div class="column">
-                                <span id="productos_producto_especifico_img1" class="image_aboutus activo"></span>
-                            </div>
-                            <div id="productos_contenedor_circulos" class="column is-1">
-                                <span class="productos_icono_circulolinea activo"></span>
-                                <span class="productos_icono_circulolinea"></span>
-                                <span class="productos_icono_circulolinea"></span>
+                <div id="seccion_productoespecifico" class="hidden">
+                    <div id="productos_producto_especifico" class="columns productos_producto3">
+                        <div class="column is-5 is-offset-1" id="productos_producto_especifico_column">
+                            <h2 id="productos_producto_especifico_titulo" class="serif">Mas té</h2>
+                            <h4 id="productos_producto_especifico_objetivo" class="light">Header number two with the objective of the project.</h4>
+                            <br>
+                            <p id="productos_producto_especifico_objetivo2">Our commitment is to always provide our customers with the best quality, cost effective, creative
+                                packaging and label products, meeting and exceeding ther expectations.
+                            </p>
+                            <br>
+                            <ul>
+                                <li id="workdone1" class="bullet">Work done explained.</li>
+                                <li id="workdone1_explained">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                                <li id="workdone2" class="bullet">More work explained.</li>
+                                <li id="workdone2_explained">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                            </ul>
+                            <br>
+                            <img id="productos_producto_especifico_logo" src="images/logoempresa.png">
+                        </div>
+                        <div class="column is-4 is-offset-1">
+                            <div class="columns height">
+                                <div class="column">
+                                    <span id="productos_producto_especifico_img1" class="image_aboutus activo"></span>
+                                </div>
+                                <div id="productos_contenedor_circulos" class="column is-1">
+                                    <span class="productos_icono_circulolinea activo"></span>
+                                    <span class="productos_icono_circulolinea"></span>
+                                    <span class="productos_icono_circulolinea"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="columns" id="client_review">
-                    <div class="column is-full">
-                        <h4><strong class="serif">Client Review</strong></h4>
+                    <div class="columns" id="client_review">
+                        <div class="column is-offset-1">
+                            <h4><strong class="serif">Client Review</strong></h4>
+                        </div>
                     </div>
-                </div>
-                <div class="columns" id="">
-                    <div class="column is-narrow">
-                        <h4 id="productos_producto_especifico_nombrequote">John Doe C.</h4>
-                        <h5 id="productos_producto_especifico_puestoquote">Marketing Manager</h5>
-                    </div>
-                    <div class="column is-offset-1">
-                        <div class="columns is-gapless">
-                            <div class="column is-narrow" id="comilla_g1">
-                                <span class="inline_b comilla_g serif" >“</span>
-                            </div>
-                            <div class="column is-10">
-                                <div id="productos_producto_especifico_quote" class="serif inline_b quote"><span class="inline_b comilla_g serif" id="comilla_g2">“</span>Had the best and fastest service. They knew exactly what we needed and provided us with the
-                                    best products we could ask for. We would definitely recommend this service to everyone.”</div>
+                    <div class="columns" id="">
+                        <div class="column is-narrow is-offset-1">
+                            <h4 id="productos_producto_especifico_nombrequote">John Doe C.</h4>
+                            <h5 id="productos_producto_especifico_puestoquote">Marketing Manager</h5>
+                        </div>
+                        <div class="column is-offset-1">
+                            <div class="columns is-gapless">
+                                <div class="column is-narrow" id="comilla_g1">
+                                    <span class="inline_b comilla_g serif" >“</span>
+                                </div>
+                                <div class="column is-9">
+                                    <div id="productos_producto_especifico_quote" class="serif inline_b quote"><span class="inline_b comilla_g serif" id="comilla_g2">“</span>Had the best and fastest service. They knew exactly what we needed and provided us with the
+                                        best products we could ask for. We would definitely recommend this service to everyone.”</div>
+                                </div>
                             </div>
                         </div>
                     </div>
