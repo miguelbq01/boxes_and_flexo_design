@@ -123,6 +123,11 @@ h4{
     font-weight: bold;
 }
 
+.section_services * ul .bullet_small{
+    list-style: circle;
+    margin-bottom: .5vw;
+}
+
 ul{
     font-size: 1.2vw;
     margin-left: 2vw;
@@ -871,9 +876,82 @@ iframe{
     animation: fadeIn ease .5s;
 }
 
-
-
 /* FIN PAGINA PRODUCTOS */
+
+/*  PAGINA SERVICIOS */
+
+    .section_services{
+        margin-bottom: 4VW;
+    }
+
+    .section_services.first{
+        margin-top: 4VW;
+    }
+
+    .dash_title::before{
+        width: 2vw;
+        height: .075vw;
+        background-color: #4d4d4d;
+        margin-right: 1vw;
+        content: "";
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .section_services * p{
+        margin-top: 1vw;
+    }
+
+    p.first{
+        margin-left: 6vw;
+    }
+
+    p.services{
+        margin-top: .5vw;
+        margin-left: 3vw;
+    }
+
+    .section_services * ul{
+        margin-top: 2.5vw;
+        font-size: 1rem;
+        margin-left: 3.7vw;
+    }
+
+    .section_services * ul li{
+        margin-bottom: 2vw;
+    }
+
+    h4.dash_title{
+        margin-top: 1vw;
+    }
+
+    .separador_h{
+        width: 100%;
+        height: 2px;
+        background-color: rgba(0, 0, 0, .25);
+        display: block;
+        position: relative;
+        content: "";
+    }
+
+    #design_dev{
+        display: flex;
+        flex-direction: row;
+        width: 86%;
+        justify-content: space-between;
+        align-items: flex-start;
+        float: right;
+        margin-top: 2.5vw;
+    }
+
+
+    #design_dev div{
+        width: 40%;
+    }
+
+
+/* FIN PAGINA SERVICIOS */
 
 
 /* FOOTER */
