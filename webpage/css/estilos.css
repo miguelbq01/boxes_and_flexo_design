@@ -1001,6 +1001,25 @@ h4.dash_title {
     width: 40%;
 }
 
+.section_services * .image_aboutus{
+    min-height: 25vw;
+}
+
+#quote_container{
+    display: flex;
+    flex-direction: row;
+}
+
+#comilla_g2{
+    display: flex;
+    align-items: flex-end;
+}
+
+#comilla_g2 span{
+    line-height: 0;
+    margin-bottom: -2vw;
+}
+
 
 /* FIN PAGINA SERVICIOS */
 

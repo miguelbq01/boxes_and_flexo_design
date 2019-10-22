@@ -116,31 +116,31 @@ $(document).ready(function() {
                 $('#productos_producto_especifico').addClass('productos_producto1');
                 $('#productos_producto_especifico_titulo').fadeOut(250);
                 $('#productos_producto_especifico_titulo').html('Imperial Plastic').fadeIn(250);
-                $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
-                $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
-                $('#productos_producto_especifico_quote').text('Quote para Imperial Plastics.”');
+                $('#productos_producto_especifico_nombrequote').text('Antonio Kuri');
+                $('#productos_producto_especifico_puestoquote').text('Vicepresidente');
+                $('#productos_producto_especifico_quote').text('Boxes and Flexo es una empresa honesta y responsable en la cual puedes confiar, tiene habilidades y destrezas mas un gran equipo de trabajo dedicado al cliente, lo cual hace que hagan un excelente trabajo.');
                 $('.image_aboutus').css('background-image', 'url("images/bosque.jpg")');
             } else {
                 if ($(this).hasClass('productos_producto2')) {
                     $('#productos_producto_especifico_titulo').fadeOut(250);
                     $('#productos_producto_especifico_titulo').html('Aliementos y Salsas').fadeIn(250);
                     $('.image_aboutus').css('background-image', 'url("images/foto1.jpg")');
-                    $('#productos_producto_especifico_quote').text('Quote para Alimentos y Salsas.”');
-                    $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
-                    $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
+                    $('#productos_producto_especifico_quote').text('Boxes and Flexo es una empresa organizada que cumple sus compromisos de calidad y tiempos de entrega buscando siempre la mejora continua.');
+                    $('#productos_producto_especifico_nombrequote').text('Miguel de la Paz Adame');
+                    $('#productos_producto_especifico_puestoquote').text('Coordinador de Costos Aliementos y Salsas de Mexico S.A. de C.V.');
                 } else {
                     if ($(this).hasClass('productos_producto3')) {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
                         $('#productos_producto_especifico_titulo').html('Don Fileto').fadeIn(250);
-                        $('#productos_producto_especifico_quote').text('Quote para Don Fileto.”');
-                        $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
-                        $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
+                        $('#productos_producto_especifico_quote').text('Boxes and Flexo, representa calidad y servicio en todos sus procesos, cumpliendo siempre con sus compromisos de calidad y dando certeza en lo que el cliente busca para el éxito de sus productos.');
+                        $('#productos_producto_especifico_nombrequote').text('Nora Zuñiga');
+                        $('#productos_producto_especifico_puestoquote').text('Dep. de Mercadotecnia e Imagen Institucional Don Fileto ');
                     } else {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
                         $('#productos_producto_especifico_titulo').html('PLeatco Pure').fadeIn(250);
-                        $('#productos_producto_especifico_quote').text('Quote para PLeatco Pure.”');
-                        $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
-                        $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
+                        $('#productos_producto_especifico_quote').text('For us working with a company fully integrated in its design and logistics department, connected with production was very important, its professional treatment saved us a lot of time in being able to launch our line of products to the market. Working with companies like this is a great pleasure, we recommend 100% this Mexican company with state-of-the-art technology.');
+                        $('#productos_producto_especifico_nombrequote').text('PLeatco Pure');
+                        $('#productos_producto_especifico_puestoquote').text('');
                     }
                 }
             }
