@@ -1308,6 +1308,47 @@ h4.dash_title {
         height: 6vw;
         margin: 0 3vw;
     }
+
+    /* SERVICES */
+    #section_ourwork{
+        background-position: -184px 0;
+    }
+
+    .circulocubo_menu{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .section_services * h5{
+        font-size: 5vw;
+    }
+
+    .section_services * h4{
+        font-size: 8vw;
+    }
+
+    .section_services{
+        width: 90%;
+        margin: 0 auto 4vw auto;
+    }
+
+    #design_dev{
+        width: 100%;
+        flex-direction: column;
+    }
+    #design_dev div{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    .dash_title::before{
+        display: none;
+    }
+
+    .section_services.first * h5, #design_dev_title{
+        text-align: center;
+    }
+    /*FIN SERVICES */
 }
 
 
