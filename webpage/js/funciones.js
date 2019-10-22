@@ -116,19 +116,31 @@ $(document).ready(function() {
                 $('#productos_producto_especifico').addClass('productos_producto1');
                 $('#productos_producto_especifico_titulo').fadeOut(250);
                 $('#productos_producto_especifico_titulo').html('Imperial Plastic').fadeIn(250);
+                $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
+                $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
+                $('#productos_producto_especifico_quote').text('Quote para Imperial Plastics.”');
                 $('.image_aboutus').css('background-image', 'url("images/bosque.jpg")');
             } else {
                 if ($(this).hasClass('productos_producto2')) {
                     $('#productos_producto_especifico_titulo').fadeOut(250);
                     $('#productos_producto_especifico_titulo').html('Aliementos y Salsas').fadeIn(250);
                     $('.image_aboutus').css('background-image', 'url("images/foto1.jpg")');
+                    $('#productos_producto_especifico_quote').text('Quote para Alimentos y Salsas.”');
+                    $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
+                    $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
                 } else {
                     if ($(this).hasClass('productos_producto3')) {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
                         $('#productos_producto_especifico_titulo').html('Don Fileto').fadeIn(250);
+                        $('#productos_producto_especifico_quote').text('Quote para Don Fileto.”');
+                        $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
+                        $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
                     } else {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
                         $('#productos_producto_especifico_titulo').html('PLeatco Pure').fadeIn(250);
+                        $('#productos_producto_especifico_quote').text('Quote para PLeatco Pure.”');
+                        $('#productos_producto_especifico_nombrequote').text('Nombre del autor');
+                        $('#productos_producto_especifico_puestoquote').text('Puesto del autor');
                     }
                 }
             }
