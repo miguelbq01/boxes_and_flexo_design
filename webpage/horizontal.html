@@ -5,123 +5,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="block">
-        <div class="animation">
-            <div class="first">
-                <img src="http://fpoimg.com/200x200?text=First">
-            </div>
-            <div>
-                <img src="http://fpoimg.com/200x200?text=Second">
-            </div>
-            <div>
-                <img src="http://fpoimg.com/200x200?text=Third">
-            </div>
-            <div>
-                <img src="http://fpoimg.com/200x200">
-            </div>
-            <div>
-                <img src="http://fpoimg.com/200x200">
-            </div>
-            <div>
-                <img src="http://fpoimg.com/200x200">
-            </div>
-            <!-- cut -->
-        </div>
+
+
+    <div class="tickerwrapper">
+        <ul class='list'>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li id="google_seleccionado" class='listitem'>
+                <img id="imagen_google_logo" style="height:100px; width:100px;" src="../webpage/images/G_logo_baw.png" alt="">
+                <center>
+                    <p>este mero</p>
+                </center>
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+            <li class='listitem'>
+                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
+            </li>
+        </ul>
     </div>
+    <style>
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: padding-box;
+            box-sizing: padding-box;
+        }
+        
+        li img {
+            padding: 40px 100px;
+        }
+        
+        body {
+            background: #CCC;
+        }
+        
+        body,
+        div,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+            font-size: 16pt;
+        }
+        
+        .tickerwrapper {
+            /* the outer div */
+            position: relative;
+            left: 0%;
+            top: 100px;
+            border: 1px solid #444;
+            background: #fff;
+            width: 99.9%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        ul.list {
+            position: relative;
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul.list.cloned {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        ul.list li {
+            float: left;
+            padding-left: 20px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+    <script>
+        $('#google_seleccionado').on('mouseover', function() {
+            $('#imagen_google_logo').attr('src', '../webpage/images/G_logo.png');
+        });
+        $('#google_seleccionado').on('mouseout', function() {
+            $('#imagen_google_logo').attr('src', '../webpage/images/G_logo_baw.png');
+        });
 
 
 
+        var $tickerWrapper = $(".tickerwrapper");
+        var $list = $tickerWrapper.find("ul.list");
+        var $clonedList = $list.clone();
+        var listWidth = 10;
+
+        $list.find("li").each(function(i) {
+            listWidth += $(this, i).outerWidth(true);
+        });
+
+        var endPos = $tickerWrapper.width() - listWidth;
+
+        $list.add($clonedList).css({
+            "width": listWidth + "px"
+        });
+
+        $clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+        //TimelineMax
+        var infinite = new TimelineMax({
+            repeat: -1,
+            paused: true
+        });
+        var time = 40;
+
+        infinite
+            .fromTo($list, time, {
+                rotation: 0.01,
+                x: 0
+            }, {
+                force3D: true,
+                x: -listWidth,
+                ease: Linear.easeNone
+            }, 0)
+            .fromTo($clonedList, time, {
+                rotation: 0.01,
+                x: listWidth
+            }, {
+                force3D: true,
+                x: 0,
+                ease: Linear.easeNone
+            }, 0)
+            .set($list, {
+                force3D: true,
+                rotation: 0.01,
+                x: listWidth
+            })
+            .to($clonedList, time, {
+                force3D: true,
+                rotation: 0.01,
+                x: -listWidth,
+                ease: Linear.easeNone
+            }, time)
+            .to($list, time, {
+                force3D: true,
+                rotation: 0.01,
+                x: 0,
+                ease: Linear.easeNone
+            }, time)
+            .progress(1).progress(0)
+            .play();
+
+        //Pause/Play		
+        $tickerWrapper.on("mouseenter", function() {
+            infinite.pause();
+        }).on("mouseleave", function() {
+            infinite.play();
+        });
+    </script>
 </body>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background-color: #000;
-    }
-    
-    .block {
-        overflow: hidden;
-        width: 800px;
-        margin: 50px auto;
-        background: #fff;
-    }
-    
-    .animation {
-        width: auto;
-        height: 100px;
-        font-size: 0px;
-    }
-    
-    .animation div {
-        display: inline-block;
-        width: auto;
-        float: none;
-        padding: 0 10px;
-    }
-</style>
 
-<script>
-    $(window).on('load', function() {
-        // Please run it with window.onload, not with document.ready
-        initSmoothScrolling('.block', 'smoothscroll');
-    });
-
-    function initSmoothScrolling(container, animation) {
-        /*
-         * @param {String} container Class or ID of the animation container
-         * @param {String} animation Name of the animation, e.g. smoothscroll
-         */
-        var sliderWidth = 0;
-        var animationWidth = 0;
-        var sliderHeight = $('>div>div:first-of-type', container).outerHeight(false);
-
-        $('>div>div', container).each(function() {
-            animationWidth += $(this).outerWidth(false);
-        });
-
-        // detect number of visible slides
-        var slidesVisible = $(container).width() / $('>div>div:first-of-type', container).outerWidth(false);
-        slidesVisible = Math.ceil(slidesVisible);
-
-        // count slides to determine animation speed
-        var slidesNumber = $('>div>div', container).length;
-        var speed = slidesNumber * 2;
-
-        // append the tail	
-        $('>div>div', container).slice(0, slidesVisible).clone().appendTo($('>div', container));
-
-        // Detect the slider width with appended tail
-        $('>div>div', container).each(function() {
-            sliderWidth += $(this).outerWidth(false);
-        });
-
-        // set slider dimensions
-        $('>div', container).css({
-            'width': sliderWidth,
-            'height': sliderHeight
-        });
-
-        // Insert styles to html
-        $("<style type='text/css'>@keyframes " + animation + " { 0% { margin-left: 0px; } 100% { margin-left: -" + animationWidth + "px; } } " + $('>div>div:first-of-type', container).selector + " { -webkit-animation: " + animation + " " + speed + "s linear infinite; -moz-animation: " + animation + " " + speed + "s linear infinite; -ms-animation: " + animation + " " + speed + "s linear infinite; -o-animation: " + animation + " " + speed + "s linear infinite; animation: " + animation + " " + speed + "s linear infinite; }</style>").appendTo("head");
-
-        // restart the animation (e.g. for safari & ie)	
-        var cl = $(container).attr("class");
-        $(container).removeClass(cl).animate({
-            'nothing': null
-        }, 1, function() {
-            $(this).addClass(cl);
-        });
-    }
-</script>
 
 </html>
