@@ -36,6 +36,28 @@ html {
     opacity: 0;
 }
 
+ .video_overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+}
+
+#video_landing{
+    position: absolute;
+    width: 108vw;
+    height: 108vh;
+    top: -7vh;
+    left: 0;
+    transition: .25s;
+}
+
+.hero-body, .hero-foot{
+    z-index: 99;
+}
+
 .contact_form_row {
     display: flex;
     flex-direction: row;
@@ -82,6 +104,9 @@ html {
 
 #section_landing {
     opacity: 1;
+    background-image: none;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .contact_form_column1 {
@@ -167,6 +192,7 @@ ul {
 .navbar {
     padding: 2vw 5vw;
     background-color: transparent;
+    z-index: 99;
 }
 
 .hero-head {
