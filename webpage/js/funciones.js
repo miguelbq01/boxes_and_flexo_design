@@ -2,7 +2,6 @@ $(document).ready(function() {
     /* FUNCIONES LANDING */
     $('.mas_productos').mouseenter(function() {
         $(this).find('img').attr('src', 'images/flechaB.png');
-        console.log("holo");
     }).mouseleave(function() {
         $(this).find('img').attr('src', 'images/flechaN.png');
     });
@@ -14,7 +13,8 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('negro')) {
                 $('.navbar-brand .navbar_logo').removeClass('negro');
                 $('.navbar-brand .navbar_logo').addClass('blanco');
-                setTimeout(function() {
+                setTimeout(function() { 
+                    $('#video_landing').css('top','-1vh');
                     $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoBlanco.png")');
                     $('.navbar-burger').find('span').css('background-color', '#fff');
                     $('.icono_caja').addClass('icono_circulolinea').removeClass('icono_caja');
@@ -28,6 +28,7 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('blanco')) {
                 $('.navbar-brand .navbar_logo').removeClass('blanco');
                 $('.navbar-brand .navbar_logo').addClass('negro');
+                $('#video_landing').css('top','-8vh');
                 setTimeout(function() {
                     $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoNegro.png")');
                     $('.navbar-burger').find('span').css('background-color', '#1a1a1a');
@@ -47,6 +48,7 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('blanco')) {
                 $('.navbar-brand .navbar_logo').removeClass('blanco');
                 $('.navbar-brand .navbar_logo').addClass('negro');
+                $('#video_landing').css('top','-8vh');
                 setTimeout(function() {
                     $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoNegro.png")');
                     $('.navbar-burger').find('span').css('background-color', '#1a1a1a');
@@ -65,6 +67,7 @@ $(document).ready(function() {
             $('#section_contact .container').addClass('fadeSlideRight');
             $('.navbar-brand .navbar_logo').removeClass('negro');
             $('.navbar-brand .navbar_logo').addClass('blanco');
+            $('#video_landing').css('top','-8vh');
             setTimeout(function() {
                 $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoBlanco.png")');
                 $('.navbar-burger').find('span').css('background-color', '#fff');
