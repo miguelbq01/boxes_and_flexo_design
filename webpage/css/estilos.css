@@ -36,16 +36,16 @@ html {
     opacity: 0;
 }
 
- .video_overlay{
+.video_overlay {
     position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
 }
 
-#video_landing{
+#video_landing {
     position: absolute;
     width: 108vw;
     height: 108vh;
@@ -54,7 +54,8 @@ html {
     transition: .25s;
 }
 
-.hero-body, .hero-foot{
+.hero-body,
+.hero-foot {
     z-index: 99;
 }
 
@@ -168,6 +169,7 @@ ul {
     align-self: flex-end;
     justify-self: flex-end;
 }
+
 
 /* NAVBAR */
 
@@ -748,8 +750,28 @@ iframe {
     box-shadow: 0 0 1vw .2vw rgba(0, 0, 0, .2);
 }
 
-#productos_producto3 {
+.productos_producto1 {
+    background-image: url("../images/logo_imperial_plastic.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productos_producto2 {
+    background-image: url("../images/logo_alimentos_salsas.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productos_producto3 {
     background-image: url("../images/logo_donfileto.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productos_producto4 {
+    background-image: url("../images/logo_pleatco.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #header_productos {
@@ -1018,21 +1040,21 @@ h4.dash_title {
     width: 40%;
 }
 
-.section_services * .image_aboutus{
+.section_services * .image_aboutus {
     min-height: 25vw;
 }
 
-#quote_container{
+#quote_container {
     display: flex;
     flex-direction: row;
 }
 
-#comilla_g2{
+#comilla_g2 {
     display: flex;
     align-items: flex-end;
 }
 
-#comilla_g2 span{
+#comilla_g2 span {
     line-height: 0;
     margin-bottom: -2vw;
 }
@@ -1131,24 +1153,22 @@ h4.dash_title {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    .video_overlay{
+    .video_overlay {
         display: none;
     }
-    
-    #video_landing{
+    #video_landing {
         display: none;
     }
-    .circulocubo{
+    .circulocubo {
         width: 8vw;
         height: 8vw;
     }
-    #section_landing{
+    #section_landing {
         background-image: url('../images/bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-
     .title {
         font-size: 9vw;
     }
@@ -1362,44 +1382,37 @@ h4.dash_title {
         height: 6vw;
         margin: 0 3vw;
     }
-
     /* SERVICES */
-    #section_ourwork{
+    #section_ourwork {
         background-position: -184px 0;
     }
-
-    .circulocubo_menu{
+    .circulocubo_menu {
         width: 8vw;
         height: 8vw;
     }
-
-    .section_services * h5{
+    .section_services * h5 {
         font-size: 5vw;
     }
-
-    .section_services * h4{
+    .section_services * h4 {
         font-size: 8vw;
     }
-
-    .section_services{
+    .section_services {
         width: 90%;
         margin: 0 auto 4vw auto;
     }
-
-    #design_dev{
+    #design_dev {
         width: 100%;
         flex-direction: column;
     }
-    #design_dev div{
+    #design_dev div {
         width: 100%;
         margin-bottom: 4vw;
     }
-
-    .dash_title::before{
+    .dash_title::before {
         display: none;
     }
-
-    .section_services.first * h5, #design_dev_title{
+    .section_services.first * h5,
+    #design_dev_title {
         text-align: center;
     }
     /*FIN SERVICES */
