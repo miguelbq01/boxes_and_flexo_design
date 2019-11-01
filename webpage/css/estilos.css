@@ -181,6 +181,11 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
+    transition: .25s;
+}
+
+.navbar_logo:hover{
+    opacity: .5;
 }
 
 .navbar {
