@@ -184,8 +184,16 @@ ul {
     transition: .25s;
 }
 
+.navbar_logo.negro{
+    background-image: url('../images/logoNegro.png');
+}
+
 .navbar_logo:hover{
-    opacity: .5;
+    background-image: url('../images/logoCBlanco.png');
+}
+
+.navbar_logo.negro:hover{
+    background-image: url('../images/logoCNegro.png');
 }
 
 .navbar {
