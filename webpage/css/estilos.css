@@ -184,7 +184,7 @@ ul {
     transition: .25s;
 }
 
-.navbar_logo:hover{
+.navbar_logo:hover {
     opacity: .5;
 }
 
@@ -535,12 +535,16 @@ link:hover .underlineB {
     background-size: cover;
     background-position: -76px;
     background-repeat: no-repeat;
+    border-radius: 40px;
+    box-shadow: 3px 7px 8px #a5a5a5;
 }
 
 #material_imagen_2 {
     background-image: url("../images/Captura.png");
     background-size: cover;
     background-position: -76px;
+    border-radius: 40px;
+    box-shadow: -3px 7px 8px #a5a5a5;
     background-repeat: no-repeat;
 }
 
