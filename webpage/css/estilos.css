@@ -184,21 +184,8 @@ ul {
     transition: .25s;
 }
 
-<<<<<<< HEAD
 .navbar_logo:hover {
     opacity: .5;
-=======
-.navbar_logo.negro{
-    background-image: url('../images/logoNegro.png');
-}
-
-.navbar_logo:hover{
-    background-image: url('../images/logoCBlanco.png');
-}
-
-.navbar_logo.negro:hover{
-    background-image: url('../images/logoCNegro.png');
->>>>>>> ddd5614703fceb0e176b367c9184bd4b0a68f0d7
 }
 
 .navbar {
