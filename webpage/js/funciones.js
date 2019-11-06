@@ -13,9 +13,9 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('negro')) {
                 $('.navbar-brand .navbar_logo').removeClass('negro');
                 $('.navbar-brand .navbar_logo').addClass('blanco');
-                setTimeout(function() { 
-                    $('#video_landing').css('top','-1vh');
-                    $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoBlanco.png")');
+                setTimeout(function() {
+                    $('#video_landing').css('top', '-1vh');
+                    $('.navbar-brand .navbar_logo').removeClass('negro');
                     $('.navbar-burger').find('span').css('background-color', '#fff');
                     $('.icono_caja').addClass('icono_circulolinea').removeClass('icono_caja');
                     $('.icono_circulolinea').removeClass('negro');
@@ -28,9 +28,9 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('blanco')) {
                 $('.navbar-brand .navbar_logo').removeClass('blanco');
                 $('.navbar-brand .navbar_logo').addClass('negro');
-                $('#video_landing').css('top','-8vh');
+                $('#video_landing').css('top', '-8vh');
                 setTimeout(function() {
-                    $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoNegro.png")');
+                    $('.navbar-brand .navbar_logo').addClass('negro');
                     $('.navbar-burger').find('span').css('background-color', '#1a1a1a');
                     $('.icono_caja').addClass('icono_circulolinea').removeClass('icono_caja');
                     $('.icono_circulolinea').addClass('negro');
@@ -48,9 +48,9 @@ $(document).ready(function() {
             if ($('.navbar-brand .navbar_logo').hasClass('blanco')) {
                 $('.navbar-brand .navbar_logo').removeClass('blanco');
                 $('.navbar-brand .navbar_logo').addClass('negro');
-                $('#video_landing').css('top','-8vh');
+                $('#video_landing').css('top', '-8vh');
                 setTimeout(function() {
-                    $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoNegro.png")');
+                    $('.navbar-brand .navbar_logo').addClass('negro');
                     $('.navbar-burger').find('span').css('background-color', '#1a1a1a');
                     $('.icono_caja').addClass('icono_circulolinea').removeClass('icono_caja');
                     $('.icono_circulolinea').addClass('negro');
@@ -67,9 +67,9 @@ $(document).ready(function() {
             $('#section_contact .container').addClass('fadeSlideRight');
             $('.navbar-brand .navbar_logo').removeClass('negro');
             $('.navbar-brand .navbar_logo').addClass('blanco');
-            $('#video_landing').css('top','-8vh');
+            $('#video_landing').css('top', '-8vh');
             setTimeout(function() {
-                $('.navbar-brand .navbar_logo').css('background-image', 'url("images/logoBlanco.png")');
+                $('.navbar-brand .navbar_logo').removeClass('negro');
                 $('.navbar-burger').find('span').css('background-color', '#fff');
                 $('.icono_caja').addClass('icono_circulolinea').removeClass('icono_caja');
                 $('.icono_circulolinea').removeClass('negro');
@@ -116,7 +116,7 @@ $(document).ready(function() {
             }, 250);
             if ($(this).hasClass('productos_producto1')) {
                 $('#productos_producto_especifico').removeClass('productos_producto2 productos_producto3 productos_producto4');
-                $('#productos_producto_especifico').addClass('productos_producto1');
+
                 $('#productos_producto_especifico_titulo').fadeOut(250);
                 $('#productos_producto_especifico_titulo').html('Imperial Plastic').fadeIn(250);
                 $('#productos_producto_especifico_nombrequote').text('Antonio Kuri');
