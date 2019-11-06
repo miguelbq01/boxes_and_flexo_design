@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boxes & Flexo</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Rufina:400,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="navbar_productos">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar_logo blanco" href="#"></a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="link navbar-item">HOME</a>
+                <a class="link navbar-item">ABOUT US</a>
+                <a class="link navbar-item">PRODUCTS</a>
+                <a class="link navbar-item">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <section class="section is-medium" id="section_ourwork">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-text-centered" id="header_productos">
+                    <img class="circulocubo_menu" src="images/icono_circulocubo.png">
+                    <h1 class="title serif">View our work.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-medium" id="section_proyectos">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-1">
+                    <div class="productos_product productos_producto1">
+                        <h2 class="white serif products_product_title">Imperial Plastics</h2>
+                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+                        <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="productos_product productos_producto2">
+                        <h2 class="white serif products_product_title">Aliementos y Salsas</h2>
+                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+                        <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="productos_product productos_producto3">
+                        <h2 class="white serif products_product_title">Don Fileto</h2>
+                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+                        <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="productos_product productos_producto4">
+                        <h2 class="white serif products_product_title">PLeatco Pure</h2>
+                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+                        <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
+                    </div>
+                </div>
+                <div class="column is-1"></div>
+            </div>
+            <div id="seccion_productoespecifico" class="hidden">
+                <div id="productos_producto_especifico" class="columns productos_producto3">
+                    <div class="column is-5 is-offset-1" id="productos_producto_especifico_column">
+                        <div class="columns" id="client_review">
+                            <div class="column is-offset-1">
+                                <h4><strong class="serif">Client Review</strong></h4>
+                            </div>
+                        </div>
+                        <div class="columns" id="quote_container">
+                            <div class="column is-narrow is-offset-1">
+                                <h4 id="productos_producto_especifico_nombrequote">Antonio Kuri.</h4>
+                                <h5 id="productos_producto_especifico_puestoquote">Vicepresidente, IMPERIAL PLASTICS
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="column is-offset-1">
+                            <div class="columns is-gapless">
+                                <div class="column is-narrow" id="comilla_g1">
+                                    <span class="inline_b comilla_g serif">“</span>
+                                </div>
+                                <div class="column">
+                                    <div id="productos_producto_especifico_quote" class="serif inline_b quote"><span class="inline_b comilla_g serif" id="comilla_g2">“</span>Boxes and Flexo es una empresa honesta y responsable en la cual puedes confiar, tiene habilidades y destrezas mas un gran equipo de trabajo dedicado al cliente,
+                                        lo cual hace que hagan un excelente trabajo.”</div>
+                                </div>
+                                <div class="column is-narrow" id="comilla_g2">
+                                    <span class="inline_b comilla_g serif">”</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4 is-offset-1">
+                        <div class="columns height">
+                            <div class="column">
+                                <span id="productos_producto_especifico_img1" class="image_aboutus activo"></span>
+                            </div>
+                            <div id="productos_contenedor_circulos" class="column is-1">
+                                <span class="productos_icono_circulolinea activo"></span>
+                                <span class="productos_icono_circulolinea"></span>
+                                <span class="productos_icono_circulolinea"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
