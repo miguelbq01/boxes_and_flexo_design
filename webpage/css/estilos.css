@@ -176,7 +176,6 @@ ul {
 .navbar_logo {
     width: 10vw;
     height: 3.7vw;
-    background-image: url('../images/logoBlanco.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,8 +183,20 @@ ul {
     transition: .25s;
 }
 
-.navbar_logo:hover {
-    opacity: .5;
+.navbar_logo.blanco{
+    background-image: url('../images/logoBlanco.png');
+}
+
+.navbar_logo.blanco.active{
+    background-image: url('../images/logoCBlanco.png');
+}
+
+.navbar_logo.negro{
+    background-image: url('../images/logoNegro.png');
+}
+
+.navbar_logo.negro.active{
+    background-image: url('../images/logoCNegro.png');
 }
 
 .navbar {

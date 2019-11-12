@@ -6,6 +6,12 @@ $(document).ready(function() {
         $(this).find('img').attr('src', 'images/flechaN.png');
     });
 
+    $('.navbar_logo').mouseenter(function() {
+        $(this).addClass('active');
+    }).mouseleave(function() {
+        $(this).removeClass('active');
+    });
+
     if ($('.sections_principal').length > 0) {
         $('.overlay_contenedor').fadeOut(0);
         inView('#section_landing').on('enter', function(el) {
