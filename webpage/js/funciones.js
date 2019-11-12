@@ -103,6 +103,18 @@ $(document).ready(function() {
         $('.productos_icono_circulolinea').click(function() {
             $('.productos_icono_circulolinea').removeClass('activo');
             $(this).addClass('activo');
+            var divIndex = $(this).index('#productos_contenedor_circulos span');
+            if(divIndex == 0){
+                $('#productos_producto_especifico_img').removeClass('dos tres').addClass('uno')
+            }
+            else{
+                if(divIndex == 1){
+                    $('#productos_producto_especifico_img').removeClass('uno tres').addClass('dos')
+                }
+                else{
+                    $('#productos_producto_especifico_img').removeClass('dos uno').addClass('tres')
+                }
+            }
         });
 
 

@@ -337,6 +337,36 @@ link:hover .underlineB {
     background-color: #1a1a1a;
 }
 
+#productos_producto_especifico_img.dos .uno, #productos_producto_especifico_img.tres .uno, #productos_producto_especifico_img.tres .dos{
+    opacity: 0;
+}
+
+#productos_producto_especifico_img div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+#productos_producto_especifico_img .uno{
+    z-index: 3;
+    background-color: red;
+}
+
+#productos_producto_especifico_img .dos{
+    z-index: 2;
+    background-color: blue;
+}
+
+#productos_producto_especifico_img .tres{
+    z-index: 1;
+    background-color: yellow;
+}
+
 
 /* SIDEBAR */
 
@@ -593,6 +623,7 @@ link:hover .underlineB {
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
 }
 
 .aboutus_image {
@@ -1272,7 +1303,7 @@ h4.dash_title {
     #productos_contenedor_circulos {
         display: none;
     }
-    #productos_producto_especifico_img1 {
+    #productos_producto_especifico_img {
         height: 28vh;
     }
     #client_review {
