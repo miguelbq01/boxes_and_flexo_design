@@ -1428,6 +1428,60 @@ h4.dash_title {
 }
 
 
+/*  ESTILOS DE LOGOS MOVIENDOSE  */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+}
+
+li img {
+    padding: 40px 100px;
+}
+
+body,
+div,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    font-size: 16pt;
+}
+
+.tickerwrapper {
+    /* the outer div */
+    position: relative;
+    left: 0%;
+    top: 100px;
+    width: 99.9%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul.list {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list.cloned {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+ul.list li {
+    float: left;
+    padding-left: 20px;
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 601px) {}
