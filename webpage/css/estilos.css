@@ -183,19 +183,19 @@ ul {
     transition: .25s;
 }
 
-.navbar_logo.blanco{
+.navbar_logo.blanco {
     background-image: url('../images/logoBlanco.png');
 }
 
-.navbar_logo.blanco.active{
+.navbar_logo.blanco.active {
     background-image: url('../images/logoCBlanco.png');
 }
 
-.navbar_logo.negro{
+.navbar_logo.negro {
     background-image: url('../images/logoNegro.png');
 }
 
-.navbar_logo.negro.active{
+.navbar_logo.negro.active {
     background-image: url('../images/logoCNegro.png');
 }
 
@@ -337,18 +337,23 @@ link:hover .underlineB {
     background-color: #1a1a1a;
 }
 
-#productos_producto_especifico_img.uno .dos, #productos_producto_especifico_img.uno .tres, #productos_producto_especifico_img.dos .uno, #productos_producto_especifico_img.dos .tres, #productos_producto_especifico_img.tres .uno, #productos_producto_especifico_img.tres .dos{
+#productos_producto_especifico_img.uno .dos,
+#productos_producto_especifico_img.uno .tres,
+#productos_producto_especifico_img.dos .uno,
+#productos_producto_especifico_img.dos .tres,
+#productos_producto_especifico_img.tres .uno,
+#productos_producto_especifico_img.tres .dos {
     opacity: 0;
 }
 
-#productos_producto_especifico_img{
+#productos_producto_especifico_img {
     width: 100%;
     height: 100%;
     display: block;
     position: relative;
 }
 
-#productos_producto_especifico_img div{
+#productos_producto_especifico_img div {
     position: absolute;
     top: 0;
     left: 0;
@@ -360,65 +365,66 @@ link:hover .underlineB {
     transition: .5s;
 }
 
-#productos_producto_especifico_img.ip .uno{
+#productos_producto_especifico_img.ip .uno {
     z-index: 3;
     background-image: url('../images/ip1.jpg');
 }
 
-#productos_producto_especifico_img.ip .dos{
+#productos_producto_especifico_img.ip .dos {
     z-index: 2;
     background-image: url('../images/ip2.jpg');
 }
 
-#productos_producto_especifico_img.ip .tres{
+#productos_producto_especifico_img.ip .tres {
     z-index: 1;
     background-image: url('../images/ip3.jpg');
 }
 
-#productos_producto_especifico_img.ays .uno{
+#productos_producto_especifico_img.ays .uno {
     z-index: 3;
     background-image: url('../images/ays1.webp');
 }
 
-#productos_producto_especifico_img.ays .dos{
+#productos_producto_especifico_img.ays .dos {
     z-index: 2;
     background-image: url('../images/ays2.png');
 }
 
-#productos_producto_especifico_img.ays .tres{
+#productos_producto_especifico_img.ays .tres {
     z-index: 1;
     background-image: url('../images/ays3.png');
 }
 
-#productos_producto_especifico_img.df .uno{
+#productos_producto_especifico_img.df .uno {
     z-index: 3;
     background-image: url('../images/df1.png');
 }
 
-#productos_producto_especifico_img.df .dos{
+#productos_producto_especifico_img.df .dos {
     z-index: 3;
     background-image: url('../images/df2.png');
 }
 
-#productos_producto_especifico_img.df .tres{
+#productos_producto_especifico_img.df .tres {
     z-index: 3;
     background-image: url('../images/df3.png');
 }
 
-#productos_producto_especifico_img.pp .uno{
+#productos_producto_especifico_img.pp .uno {
     z-index: 3;
     background-image: url('../images/pp1.png');
 }
 
-#productos_producto_especifico_img.pp .dos{
+#productos_producto_especifico_img.pp .dos {
     z-index: 3;
     background-image: url('../images/pp2.png');
 }
 
-#productos_producto_especifico_img.pp .tres{
+#productos_producto_especifico_img.pp .tres {
     z-index: 3;
     background-image: url('../images/pp3.png');
 }
+
 
 /* SIDEBAR */
 
@@ -850,19 +856,19 @@ iframe {
 }
 
 .productos_producto1 {
-    background-image: url("../images/logo_imperial_plastic.png") !important;
+    background-image: url("../images/logos_empresas\ plastics-04.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .productos_producto2 {
-    background-image: url("../images/logo_alimentos_salsas.png") !important;
+    background-image: url("../images/logos_empresas-01.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .productos_producto3 {
-    background-image: url("../images/logo_donfileto.jpg") !important;
+    background-image: url("../images/logos_empresas-02.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
