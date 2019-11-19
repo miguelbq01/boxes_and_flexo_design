@@ -130,37 +130,34 @@
             <div>
                 <div>
                     <div class="tickerwrapper" style="margin-bottom: 100px;">
+                        
+
                         <ul class="list">
-                            <li class="listitem">
-                                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
-                                <center>
-                                    <p>1</p>
-                                </center>
+                            <li id="luz_eterna_container" class="listitem">
+                                <img id="luz_eterna" src="../webpage//images/logos_grises-06.png" alt="Luz Eterna">
+
 
                             </li>
-                            <li class="listitem">
-                                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
-                                <center>
-                                    <p>1</p>
-                                </center>
+                            <li id="don_fileto_container" class="listitem">
+                                <img id="don_fileto" src="../webpage//images/logos_grises-05.png" alt="Don Fileto">
+
+
                             </li>
-                            <li class="listitem">
-                                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
-                                <center>
-                                    <p>1</p>
-                                </center>
+                            <li id="don_alimentos_container" class="listitem">
+                                <img id="logo_alimentos" src="../webpage//images/logos_grises-04.png" alt="Logo Alimentos">
+
                             </li>
-                            <li id="google_seleccionado" class="listitem">
-                                <img id="imagen_google_logo" style="height:100px; width:100px;" src="../webpage//images/G_logo.png" alt="">
-                                <center>
-                                    <p>1</p>
-                                </center>
+                            <li id="don_plea_container" class="listitem">
+                                <img id="plea_pure" src="../webpage//images/logos_grises-03.png" alt="plea pure">
+
                             </li>
-                            <li class="listitem">
-                                <img style="height:100px; width:100px;" src="../webpage/images/G_logo.png" alt="">
-                                <center>
-                                    <p>1</p>
-                                </center>
+                            <li id="don_imperial_container" class="listitem">
+                                <img id="imperial_plastic" src="../webpage//images/logos_grises-02.png" alt="Imperial Plastics">
+
+                            </li>
+                            <li id="don_calimax_container" class="listitem">
+                                <img id="calimax" src="../webpage//images/logos_grises-01.png" alt="Calimax">
+
                             </li>
 
                         </ul>
@@ -172,13 +169,59 @@
 </body>
 
 <script>
-    //Kjavascript de horizontal scroll
-    $('#google_seleccionado').on('mouseover', function() {
-        $('#imagen_google_logo').attr('src', '../webpage/images/G_logo.png');
+    //luz eterna
+    $('#luz_eterna_container').on('mouseover', function() {
+        $('#luz_eterna').attr('src', '../webpage/images/logos_empresas-06.png');
     });
-    $('#google_seleccionado').on('mouseout', function() {
-        $('#imagen_google_logo').attr('src', '../webpage/images/G_logo_baw.png');
+    $('#luz_eterna_container').on('mouseout', function() {
+        $('#luz_eterna').attr('src', '../webpage/images/logos_grises-06.png');
     });
+
+
+    //don Fileto
+    $('#don_fileto_container').on('mouseover', function() {
+        $('#don_fileto').attr('src', '../webpage/images/logos_empresas-05.png');
+    });
+    $('#don_fileto_container').on('mouseout', function() {
+        $('#don_fileto').attr('src', '../webpage/images/logos_grises-05.png');
+    });
+
+
+    //logo_alimentos
+    $('#don_alimentos_container').on('mouseover', function() {
+        $('#logo_alimentos').attr('src', '../webpage/images/logos_empresas-04.png');
+    });
+    $('#don_alimentos_container').on('mouseout', function() {
+        $('#logo_alimentos').attr('src', '../webpage/images/logos_grises-04.png');
+    });
+
+
+    //logo_Plea_Pure
+    $('#don_plea_container').on('mouseover', function() {
+        $('#plea_pure').attr('src', '../webpage/images/logos_empresas-03.png');
+    });
+    $('#don_plea_container').on('mouseout', function() {
+        $('#plea_pure').attr('src', '../webpage/images/logos_grises-03.png');
+    });
+
+
+    //imperial_plastic
+    $('#don_imperial_container').on('mouseover', function() {
+        $('#imperial_plastic').attr('src', '../webpage/images/logos_empresas-02.png');
+    });
+    $('#don_imperial_container').on('mouseout', function() {
+        $('#imperial_plastic').attr('src', '../webpage/images/logos_grises-02.png');
+    });
+
+
+    //calimax
+    $('#don_calimax_container').on('mouseover', function() {
+        $('#calimax').attr('src', '../webpage/images/logos_empresas-01.png');
+    });
+    $('#don_calimax_container').on('mouseout', function() {
+        $('#calimax').attr('src', '../webpage/images/logos_grises-01.png');
+    });
+
 
 
 
@@ -201,7 +244,7 @@
 
     //TimelineMax
     var infinite = new TimelineMax({
-        repeat: -1,
+        repeat: 0,
         paused: true
     });
     var time = 40;

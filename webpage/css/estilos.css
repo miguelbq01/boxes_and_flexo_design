@@ -31,7 +31,7 @@ html {
 .sections_principal {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    height: 100vh;
+    height: 120vh;
     animation: fadeDown ease 1s;
     opacity: 0;
 }
@@ -124,7 +124,7 @@ html {
 .contact_form_column3 {}
 
 .section.is-medium {
-    padding: 6.5rem 1.5rem;
+    padding: 3.5rem 1.5rem;
 }
 
 h2 {
@@ -1533,9 +1533,7 @@ h4.dash_title {
     box-sizing: padding-box;
 }
 
-li img {
-    padding: 40px 100px;
-}
+li img {}
 
 body,
 div,
@@ -1558,12 +1556,26 @@ p {
     cursor: pointer;
 }
 
+#corner_blurred_scroll {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-color: transparent;
+    box-shadow: inset 0 0 10px 10px white;
+    width: 100%;
+    z-index: 0;
+}
+
 ul.list {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
+    box-shadow: none;
 }
 
 ul.list.cloned {
@@ -1575,6 +1587,7 @@ ul.list.cloned {
 ul.list li {
     float: left;
     padding-left: 20px;
+    margin: 0 60px;
 }
 
 
