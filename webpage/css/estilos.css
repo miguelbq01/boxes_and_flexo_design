@@ -84,7 +84,7 @@ html {
 .contact_lineaDown {
     justify-self: flex-end;
     align-self: flex-end;
-    width: 97%;
+    width: 96.2%;
     height: 1px;
     background-color: #fff;
     vertical-align: middle;
@@ -1549,8 +1549,8 @@ h4.dash_title {
 
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
     .contact_lineaDown {
-        width: 96.9%;
+        width: 97%;
     }
 }
