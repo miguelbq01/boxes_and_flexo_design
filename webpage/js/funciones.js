@@ -69,7 +69,7 @@ $(document).ready(function() {
                 }, 250);
             }
         });
-        inView('#section_contact').on('enter', function(el) {
+        inView('.info_contacto').on('enter', function(el) {
             $('#section_contact .container').addClass('fadeSlideRight');
             $('.navbar-brand .navbar_logo').removeClass('negro');
             $('.navbar-brand .navbar_logo').addClass('blanco');

@@ -19,9 +19,9 @@ html {
 }
 
 #html_landing {
-    scroll-snap-type: mandatory;
+    /*scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;*/
 }
 
 .inline_b {
@@ -30,10 +30,12 @@ html {
 
 .sections_principal {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
+    scroll-padding-top: 6.5rem;
     height: 100vh;
     animation: fadeDown ease 1s;
     opacity: 0;
+    position: relative;
 }
 
 .video_overlay {
