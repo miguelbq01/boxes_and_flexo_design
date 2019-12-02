@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Rufina:400,700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/funciones.js"></script>
+
 </head>
 
 <body>
@@ -48,28 +51,28 @@
                 <div class="column is-offset-1">
                     <div class="productos_product productos_producto1">
                         <h2 class="white serif products_product_title">Imperial Plastics</h2>
-                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+
                         <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
                     </div>
                 </div>
                 <div class="column">
                     <div class="productos_product productos_producto2">
                         <h2 class="white serif products_product_title">Alimentos y Salsas</h2>
-                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+
                         <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
                     </div>
                 </div>
                 <div class="column">
                     <div class="productos_product productos_producto3">
                         <h2 class="white serif products_product_title">Don Fileto</h2>
-                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+
                         <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
                     </div>
                 </div>
                 <div class="column">
                     <div class="productos_product productos_producto4">
                         <h2 class="white serif products_product_title">Pleatco Pure</h2>
-                        <p>Lorem ipsum dolo sit amet, consectetuer adipiscing slit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna alquam erat volutpat</p>
+
                         <button class="products_moredetails">more details <span class="productos_flecha_productos"><img class="productos_flecha_img" src="images/flechaB.png" ></span></button>
                     </div>
                 </div>
@@ -77,7 +80,7 @@
             </div>
             <div id="seccion_productoespecifico" class="hidden">
                 <div id="productos_producto_especifico" class="columns">
-                    <div class="column is-5 is-offset-1" id="productos_producto_especifico_column">
+                    <div class="column is-10 is-offset-1" id="productos_producto_especifico_column">
                         <div class="columns" id="client_review">
                             <div class="column is-offset-1">
                                 <h4><strong class="serif">Client Review</strong></h4>
@@ -105,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-4 is-offset-1">
+                    <div style="display:none;" class="column is-4 is-offset-1">
                         <div class="columns height">
                             <div class="column">
                                 <span id="productos_producto_especifico_img" class="activo uno">
@@ -123,8 +126,172 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <div>
+                    <div class="tickerwrapper" style="margin-bottom: 100px;">
+
+
+                        <ul class="list">
+                            <li id="luz_eterna_container" class="listitem">
+                                <img id="luz_eterna" src="../webpage//images/logos_grises-06.png" alt="Luz Eterna">
+
+
+                            </li>
+                            <li id="don_fileto_container" class="listitem">
+                                <img id="don_fileto" src="../webpage//images/logos_grises-05.png" alt="Don Fileto">
+
+
+                            </li>
+                            <li id="don_alimentos_container" class="listitem">
+                                <img id="logo_alimentos" src="../webpage//images/logos_grises-04.png" alt="Logo Alimentos">
+
+                            </li>
+                            <li id="don_plea_container" class="listitem">
+                                <img id="plea_pure" src="../webpage//images/logos_grises-03.png" alt="plea pure">
+
+                            </li>
+                            <li id="don_imperial_container" class="listitem">
+                                <img id="imperial_plastic" src="../webpage//images/logos_grises-02.png" alt="Imperial Plastics">
+
+                            </li>
+                            <li id="don_calimax_container" class="listitem">
+                                <img id="calimax" src="../webpage//images/logos_grises-01.png" alt="Calimax">
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
+
+<script>
+    //luz eterna
+    $('#luz_eterna_container').on('mouseover', function() {
+        $('#luz_eterna').attr('src', '../webpage/images/logos_empresas-06.png');
+    });
+    $('#luz_eterna_container').on('mouseout', function() {
+        $('#luz_eterna').attr('src', '../webpage/images/logos_grises-06.png');
+    });
+
+
+    //don Fileto
+    $('#don_fileto_container').on('mouseover', function() {
+        $('#don_fileto').attr('src', '../webpage/images/logos_empresas-05.png');
+    });
+    $('#don_fileto_container').on('mouseout', function() {
+        $('#don_fileto').attr('src', '../webpage/images/logos_grises-05.png');
+    });
+
+
+    //logo_alimentos
+    $('#don_alimentos_container').on('mouseover', function() {
+        $('#logo_alimentos').attr('src', '../webpage/images/logos_empresas-04.png');
+    });
+    $('#don_alimentos_container').on('mouseout', function() {
+        $('#logo_alimentos').attr('src', '../webpage/images/logos_grises-04.png');
+    });
+
+
+    //logo_Plea_Pure
+    $('#don_plea_container').on('mouseover', function() {
+        $('#plea_pure').attr('src', '../webpage/images/logos_empresas-03.png');
+    });
+    $('#don_plea_container').on('mouseout', function() {
+        $('#plea_pure').attr('src', '../webpage/images/logos_grises-03.png');
+    });
+
+
+    //imperial_plastic
+    $('#don_imperial_container').on('mouseover', function() {
+        $('#imperial_plastic').attr('src', '../webpage/images/logos_empresas-02.png');
+    });
+    $('#don_imperial_container').on('mouseout', function() {
+        $('#imperial_plastic').attr('src', '../webpage/images/logos_grises-02.png');
+    });
+
+
+    //calimax
+    $('#don_calimax_container').on('mouseover', function() {
+        $('#calimax').attr('src', '../webpage/images/logos_empresas-01.png');
+    });
+    $('#don_calimax_container').on('mouseout', function() {
+        $('#calimax').attr('src', '../webpage/images/logos_grises-01.png');
+    });
+
+
+
+
+    var $tickerWrapper = $(".tickerwrapper");
+    var $list = $tickerWrapper.find("ul.list");
+    var $clonedList = $list.clone();
+    var listWidth = 10;
+
+    $list.find("li").each(function(i) {
+        listWidth += $(this, i).outerWidth(true);
+    });
+
+    var endPos = $tickerWrapper.width() - listWidth;
+
+    $list.add($clonedList).css({
+        "width": listWidth + "px"
+    });
+
+    $clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+    //TimelineMax
+    var infinite = new TimelineMax({
+        repeat: 0,
+        paused: true
+    });
+    var time = 40;
+
+    infinite
+        .fromTo($list, time, {
+            rotation: 0.01,
+            x: 0
+        }, {
+            force3D: true,
+            x: -listWidth,
+            ease: Linear.easeNone
+        }, 0)
+        .fromTo($clonedList, time, {
+            rotation: 0.01,
+            x: listWidth
+        }, {
+            force3D: true,
+            x: 0,
+            ease: Linear.easeNone
+        }, 0)
+        .set($list, {
+            force3D: true,
+            rotation: 0.01,
+            x: listWidth
+        })
+        .to($clonedList, time, {
+            force3D: true,
+            rotation: 0.01,
+            x: -listWidth,
+            ease: Linear.easeNone
+        }, time)
+        .to($list, time, {
+            force3D: true,
+            rotation: 0.01,
+            x: 0,
+            ease: Linear.easeNone
+        }, time)
+        .progress(1).progress(0)
+        .play();
+
+    //Pause/Play		
+    $tickerWrapper.on("mouseenter", function() {
+        infinite.pause();
+    }).on("mouseleave", function() {
+        infinite.play();
+    });
+</script>
 
 </html>

@@ -69,7 +69,7 @@ $(document).ready(function() {
                 }, 250);
             }
         });
-        inView('#section_contact').on('enter', function(el) {
+        inView('.info_contacto').on('enter', function(el) {
             $('#section_contact .container').addClass('fadeSlideRight');
             $('.navbar-brand .navbar_logo').removeClass('negro');
             $('.navbar-brand .navbar_logo').addClass('blanco');
@@ -104,14 +104,12 @@ $(document).ready(function() {
             $('.productos_icono_circulolinea').removeClass('activo');
             $(this).addClass('activo');
             var divIndex = $(this).index('#productos_contenedor_circulos span');
-            if(divIndex == 0){
+            if (divIndex == 0) {
                 $('#productos_producto_especifico_img').removeClass('dos tres').addClass('uno')
-            }
-            else{
-                if(divIndex == 1){
+            } else {
+                if (divIndex == 1) {
                     $('#productos_producto_especifico_img').removeClass('uno tres').addClass('dos')
-                }
-                else{
+                } else {
                     $('#productos_producto_especifico_img').removeClass('dos uno').addClass('tres')
                 }
             }
@@ -134,7 +132,7 @@ $(document).ready(function() {
             }, 250);
             if ($(this).hasClass('productos_producto1')) {
                 $('#productos_producto_especifico').removeClass('productos_producto2 productos_producto3 productos_producto4');
-                $('#productos_producto_especifico_img').addClass('ip');
+                $('#productos_producto_especifico_img').removeClass('ays df pp').addClass('ip');
                 $('#productos_producto_especifico_titulo').fadeOut(250);
                 $('#productos_producto_especifico_titulo').html('Imperial Plastic').fadeIn(250);
                 $('#productos_producto_especifico_nombrequote').text('Antonio Kuri');
@@ -144,7 +142,7 @@ $(document).ready(function() {
             } else {
                 if ($(this).hasClass('productos_producto2')) {
                     $('#productos_producto_especifico_titulo').fadeOut(250);
-                    $('#productos_producto_especifico_img').addClass('ays');
+                    $('#productos_producto_especifico_img').removeClass('ip df pp').addClass('ays');
                     $('#productos_producto_especifico_titulo').html('Aliementos y Salsas').fadeIn(250);
                     $('.image_aboutus').css('background-image', 'url("images/foto1.jpg")');
                     $('#productos_producto_especifico_quote').text('Boxes and Flexo es una empresa organizada que cumple sus compromisos de calidad y tiempos de entrega buscando siempre la mejora continua.');
@@ -153,14 +151,14 @@ $(document).ready(function() {
                 } else {
                     if ($(this).hasClass('productos_producto3')) {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
-                        $('#productos_producto_especifico_img').addClass('df');
+                        $('#productos_producto_especifico_img').removeClass('ays ip pp').addClass('df');
                         $('#productos_producto_especifico_titulo').html('Don Fileto').fadeIn(250);
                         $('#productos_producto_especifico_quote').text('Boxes and Flexo, representa calidad y servicio en todos sus procesos, cumpliendo siempre con sus compromisos de calidad y dando certeza en lo que el cliente busca para el éxito de sus productos.');
                         $('#productos_producto_especifico_nombrequote').text('Nora Zuñiga');
                         $('#productos_producto_especifico_puestoquote').text('Dep. de Mercadotecnia e Imagen Institucional Don Fileto ');
                     } else {
                         $('#productos_producto_especifico_titulo').fadeOut(250);
-                        $('#productos_producto_especifico_img').addClass('pp');
+                        $('#productos_producto_especifico_img').removeClass('ays df ip').addClass('pp');
                         $('#productos_producto_especifico_titulo').html('Pleatco Pure').fadeIn(250);
                         $('#productos_producto_especifico_quote').text('For us working with a company fully integrated in its design and logistics department, connected with production was very important, its professional treatment saved us a lot of time in being able to launch our line of products to the market. Working with companies like this is a great pleasure, we recommend 100% this Mexican company with state-of-the-art technology.');
                         $('#productos_producto_especifico_nombrequote').text('Pleatco Pure');
