@@ -167,7 +167,73 @@
         </div>
     </section>
 </body>
-
+<style>
+    *,
+    *::before,
+    *::after {
+        -webkit-box-sizing: padding-box;
+        
+        box-sizing: padding-box;
+    }
+    
+    .listitem{
+        display:flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    li img {
+        padding: 80px 200px;
+    }
+ 
+    
+    
+    
+    ul,
+    li,
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+        font-size: 16pt;
+    }
+    
+    .tickerwrapper {
+        /* the outer div */
+        position: relative;
+        left: 0%;
+        top: 100px;
+        border: 0px solid #444;
+        background: #fff;
+        
+        width: 140%;
+        margin-left: -280px;
+        overflow: hidden;
+        cursor: pointer;
+        
+    }
+    
+    ul.list {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    ul.list.cloned {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    ul.list li {
+        float: left;
+        padding-left: 0px;
+    }
+</style>
 <script>
     //luz eterna
     $('#luz_eterna_container').on('mouseover', function() {
@@ -176,6 +242,8 @@
     $('#luz_eterna_container').on('mouseout', function() {
         $('#luz_eterna').attr('src', '../webpage/images/logos_grises-06.png');
     });
+
+    
 
 
     //don Fileto
