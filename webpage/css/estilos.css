@@ -19,9 +19,9 @@ html {
 }
 
 #html_landing {
-    /*scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;*/
+    scroll-snap-type: y mandatory;
 }
 
 .inline_b {
@@ -30,12 +30,10 @@ html {
 
 .sections_principal {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
-    scroll-padding-top: 6.5rem;
-    height: 100vh;
+    scroll-snap-stop: normal;
+    height: 120vh;
     animation: fadeDown ease 1s;
     opacity: 0;
-    position: relative;
 }
 
 .video_overlay {
@@ -84,7 +82,7 @@ html {
 .contact_lineaDown {
     justify-self: flex-end;
     align-self: flex-end;
-    width: 96.2%;
+    width: 97%;
     height: 1px;
     background-color: #fff;
     vertical-align: middle;
@@ -123,8 +121,10 @@ html {
     padding: 1vw 2vw 1vw 1vw;
 }
 
+.contact_form_column3 {}
+
 .section.is-medium {
-    padding: 6.5rem 1.5rem;
+    padding: 3.5rem 1.5rem;
 }
 
 h2 {
@@ -183,19 +183,19 @@ ul {
     transition: .25s;
 }
 
-.navbar_logo.blanco{
+.navbar_logo.blanco {
     background-image: url('../images/logoBlanco.png');
 }
 
-.navbar_logo.blanco.active{
+.navbar_logo.blanco.active {
     background-image: url('../images/logoCBlanco.png');
 }
 
-.navbar_logo.negro{
+.navbar_logo.negro {
     background-image: url('../images/logoNegro.png');
 }
 
-.navbar_logo.negro.active{
+.navbar_logo.negro.active {
     background-image: url('../images/logoCNegro.png');
 }
 
@@ -337,18 +337,23 @@ link:hover .underlineB {
     background-color: #1a1a1a;
 }
 
-#productos_producto_especifico_img.uno .dos, #productos_producto_especifico_img.uno .tres, #productos_producto_especifico_img.dos .uno, #productos_producto_especifico_img.dos .tres, #productos_producto_especifico_img.tres .uno, #productos_producto_especifico_img.tres .dos{
+#productos_producto_especifico_img.uno .dos,
+#productos_producto_especifico_img.uno .tres,
+#productos_producto_especifico_img.dos .uno,
+#productos_producto_especifico_img.dos .tres,
+#productos_producto_especifico_img.tres .uno,
+#productos_producto_especifico_img.tres .dos {
     opacity: 0;
 }
 
-#productos_producto_especifico_img{
+#productos_producto_especifico_img {
     width: 100%;
     height: 100%;
     display: block;
     position: relative;
 }
 
-#productos_producto_especifico_img div{
+#productos_producto_especifico_img div {
     position: absolute;
     top: 0;
     left: 0;
@@ -360,65 +365,66 @@ link:hover .underlineB {
     transition: .5s;
 }
 
-#productos_producto_especifico_img.ip .uno{
+#productos_producto_especifico_img.ip .uno {
     z-index: 3;
     background-image: url('../images/ip1.jpg');
 }
 
-#productos_producto_especifico_img.ip .dos{
+#productos_producto_especifico_img.ip .dos {
     z-index: 2;
     background-image: url('../images/ip2.jpg');
 }
 
-#productos_producto_especifico_img.ip .tres{
+#productos_producto_especifico_img.ip .tres {
     z-index: 1;
     background-image: url('../images/ip3.jpg');
 }
 
-#productos_producto_especifico_img.ays .uno{
+#productos_producto_especifico_img.ays .uno {
     z-index: 3;
     background-image: url('../images/ays1.webp');
 }
 
-#productos_producto_especifico_img.ays .dos{
+#productos_producto_especifico_img.ays .dos {
     z-index: 2;
     background-image: url('../images/ays2.png');
 }
 
-#productos_producto_especifico_img.ays .tres{
+#productos_producto_especifico_img.ays .tres {
     z-index: 1;
     background-image: url('../images/ays3.png');
 }
 
-#productos_producto_especifico_img.df .uno{
+#productos_producto_especifico_img.df .uno {
     z-index: 3;
     background-image: url('../images/df1.png');
 }
 
-#productos_producto_especifico_img.df .dos{
+#productos_producto_especifico_img.df .dos {
     z-index: 3;
     background-image: url('../images/df2.png');
 }
 
-#productos_producto_especifico_img.df .tres{
+#productos_producto_especifico_img.df .tres {
     z-index: 3;
     background-image: url('../images/df3.png');
 }
 
-#productos_producto_especifico_img.pp .uno{
+#productos_producto_especifico_img.pp .uno {
     z-index: 3;
     background-image: url('../images/pp1.png');
 }
 
-#productos_producto_especifico_img.pp .dos{
+#productos_producto_especifico_img.pp .dos {
     z-index: 3;
     background-image: url('../images/pp2.png');
 }
 
-#productos_producto_especifico_img.pp .tres{
+#productos_producto_especifico_img.pp .tres {
     z-index: 3;
     background-image: url('../images/pp3.png');
 }
+
 
 /* SIDEBAR */
 
@@ -850,19 +856,19 @@ iframe {
 }
 
 .productos_producto1 {
-    background-image: url("../images/logo_imperial_plastic.png") !important;
+    background-image: url("../images/logos_empresas\ plastics-04.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .productos_producto2 {
-    background-image: url("../images/logo_alimentos_salsas.png") !important;
+    background-image: url("../images/logos_empresas-01.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .productos_producto3 {
-    background-image: url("../images/logo_donfileto.png") !important;
+    background-image: url("../images/logos_empresas-02.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1252,28 +1258,9 @@ h4.dash_title {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    #html_landing {
-        scroll-snap-type: none;
-        scroll-snap-points-y: none;
-        scroll-snap-type: y none;
-    }
-
-    .sections_principal{
-        height: auto;
-    }
-    
-    .contact_form_column3{
-
-    }
-
     .video_overlay {
         display: none;
     }
-
-    .aboutus_image{
-        background-position: center;
-    }
-
     #video_landing {
         display: none;
     }
@@ -1419,10 +1406,7 @@ h4.dash_title {
         padding: 5vw 6vw 5vw 5vw;
     }
     .contact_lineaDown {
-        width: 95.5%;
-    }
-    .info_contacto{
-        font-size: 5vw;
+        width: 99%;
     }
     .input_custom {
         padding: 0 1vw 2vw 1vw;
@@ -1540,6 +1524,61 @@ h4.dash_title {
 }
 
 
+/*  ESTILOS DE LOGOS MOVIENDOSE  */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+}
+
+li img {}
+
+body,
+div,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    font-size: 16pt;
+}
+
+.tickerwrapper {
+    /* the outer div */
+    position: relative;
+    left: 0%;
+    top: 100px;
+    width: 99.9%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul.list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+ul.list.cloned {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+ul.list li {
+    float: left;
+    padding-left: 20px;
+    margin: 0 60px;
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 601px) {}
@@ -1549,8 +1588,8 @@ h4.dash_title {
 
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+@media only screen and (min-width: 1921px) {
     .contact_lineaDown {
-        width: 97%;
+        width: 96.9%;
     }
 }
