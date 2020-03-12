@@ -857,25 +857,33 @@ iframe {
 
 .productos_producto1 {
     background-image: url("../images/logos_empresas\ plastics-04.png") !important;
-    background-size: cover;
+    background-size: contain;
+    background-origin: content-box;
+    background-position-y: 9vh;
     background-repeat: no-repeat;
 }
 
 .productos_producto2 {
     background-image: url("../images/logos_empresas-01.png") !important;
-    background-size: cover;
+    background-size: contain;
+    background-origin: content-box;
+    background-position-y: 12vh;
     background-repeat: no-repeat;
 }
 
 .productos_producto3 {
     background-image: url("../images/logos_empresas-02.png") !important;
-    background-size: cover;
+    background-size: contain;
+    background-position-y: 12vh;
+    background-origin: content-box;
     background-repeat: no-repeat;
 }
 
 .productos_producto4 {
     background-image: url("../images/logo_pleatco.jpg") !important;
-    background-size: cover;
+    background-size: contain;
+    background-origin: content-box;
+    background-position-y: 12vh;
     background-repeat: no-repeat;
 }
 
